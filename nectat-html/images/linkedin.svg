@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #002a42;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="linkedin.svg">
+    <circle id="Ellipse_4_copy" data-name="Ellipse 4 copy" class="cls-1" cx="36" cy="36" r="25"/>
+    <image id="Vector_Smart_Object" data-name="Vector Smart Object" x="24" y="22" width="25" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAXCAMAAADJPRQhAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEUAAAAAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAAAAmUb1iAAAANHRSTlMAG7T8+qsSvKT+6+jQW/34SCdqZR08oFoLaa3JwJY/YJA1464K5KxDuHCG75cy4RX5gpuAdTcVIwAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAACSSURBVCjPzdDHEsIwDATQhdBraAklgAmk0Jv+/9uwHCCDRwe4sZfVzDtYFgpFp1SuQEiVdGqS1FkakjRZWpK0O0RdVxL0+oMhfsvI0/EBn9vDeDKdBfMFy5I3UIDiplVoitYbWyJ6JrYlT2JLut3tKTvLpxz0y0eHp5MlZ14q4OnylqsR85FbNr7knov6VtT/yQNRojti8UdrFQAAAABJRU5ErkJggg=="/>
+  </g>
+</svg>
