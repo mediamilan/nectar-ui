@@ -215,9 +215,16 @@ header{padding:15px 0;}
 	display: inline-block;
     margin: 0 25px;
 	padding:24px 18px 18px 18px;
+	vertical-align: middle;
 }
 .tab-pane-head .button{
 	margin:18px;
+}
+.select-tag.selectSex {
+    min-width: 100px;
+}
+.select-tag.selectSex .select-box select {
+    width: 120%;
 }
 .tab-pane-head li:first-child{margin-left:0;}
 .tab-pane-head li:last-child{margin-right:0;}
@@ -304,6 +311,7 @@ table.table th, table.table td{
   min-height: 30px;
   padding:5px 6px 6px 9px;  
   border-radius: 8px; 
+  overflow: hidden;
 }
 select:focus{outline:none;}
 .select-tag .select-box select{
