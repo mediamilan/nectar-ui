@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Nectar | Dashboard</title>
+	<link rel="icon" href="images/favicon32.png" type="images/png" sizes="32x32">	
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>		
+		<nav class="nav-bar">
+            <div class="container">
+				<div class="flex-row">
+				   <h1 class="nectar-logo"><a href="#" title="Nectar"></a></h1>				   
+				   <div class="nav-bar-right">
+						<ul>
+							<li><a href="#">Rates and Terms</a></li>
+							<li><a class="primary-btn" href="#">Check your rate</a></li>
+						</ul>
+				   </div>
+			   </div>
+            </div>
+        </nav>
+	</header> <!-- //END HEADER -->	      
+	<div class="bodyContainer">	
+        <div class="container">
+		
+			<div class="dashboard-applications-container">
+				<div class="title-row">
+					<h2 class="big-title">Dashboard</h2>
+					<h3 class="md-title">Welcome, Joe!</h3>
+				</div>
+				<div class="tab-container primary-bgcolor">
+					<div class="tab-nav">
+						<ul>
+							<li><a href="#applications-tab">Applications</a></li>
+							<li><a class="selected" href="#loan-status-tab">Loan Status</a></li>
+							<li><a href="#profile-tab">Profile</a></li>
+						</ul>	
+					</div>
+					
+					<div id="applications-tab" class="tab-content" style="display:none;">					
+						<div class="pane-group">
+							<div class="tab-pane-head">
+								<ul class="fl">
+									<li>You currently have no in-progress applications with Nectar.</li>
+									
+								</ul>
+								<a class="fr primary-drock-btn button" href="#">Apply Now</a>
+							</div>						
+						</div><!--//pane-group-->
+					</div><!--//tab-content-->
+					
+					<div id="loan-status-tab" class="tab-content">					
+						<div class="pane-group">
+							<div class="tab-pane-head">
+								<ul class="fl">
+									<li>You currently have no loan with Nectar</li>									
+								</ul>
+								<a class="fr primary-drock-btn button" href="#">Apply Now</a>
+							</div>						
+						</div><!--//pane-group-->
+					</div><!--//tab-content-->
+					
+					<div id="profile-tab" class="tab-content" style="display:none;">					
+						<div class="pane-group">						
+							<div class="form-tag">
+								<form>
+									<div class="form-row">
+										<div class="select-tag">										
+											<div class="select-box">
+											   <select>
+												  <option>Mr</option>
+												  <option>Mrs</option>												  
+												</select>
+											 </div>																			
+										</div>
+									</div>
+									
+									<div class="form-row">
+										<div class="form-col">
+											
+											<label>
+												First name
+												<input type="text" class="type-text"/>
+											</label>
+											
+											<label>
+												Middle name
+												<input type="text" class="type-text"/>
+											</label>
+											<label>
+												Last name
+												<input type="text" class="type-text"/>
+											</label>
+											<div class="label-row">
+												<label>
+													Email address
+													<input type="email" class="type-text"/>													
+												</label>
+												<span class="verified"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 64 64"><g id="tick.svg">
+													<path class="cls-1" d="M1190.76,1178.95l-9.28-11.67a1.994,1.994,0,0,1,.31-2.79,1.966,1.966,0,0,1,2.78.31l6.52,8.2,20.17-20.29a1.956,1.956,0,0,1,2.79,0,2,2,0,0,1,0,2.81Z" transform="translate(-1166 -1134)"/>
+												  </g></svg> Verified</span>
+											</div>
+											<label>
+												Mobile number
+												<input type="text" class="type-text"/>
+											</label>											
+											<label>
+												Date of birth
+												<input type="text" class="type-text"/>
+												<span class="calendar-icon"></span>
+											</label>											
+										</div>										
+										<div class="form-col">
+											<label>
+												Address
+												<input type="text" class="type-text"/>
+											</label>
+											<label>
+												Town / City
+												<input type="text" class="type-text"/>
+											</label>
+											<label>
+												Postcode
+												<input type="text" class="type-text"/>
+											</label>
+											
+											<div class="button-row">
+												<a href="#">Change password</a>
+												<input type="submit" class="primary-drock-btn" value="Save" />
+											</div>
+										</div>										
+									</div>
+								</form>
+							</div><!--//form-tag-->
+						</div><!--//pane-group-->						
+					</div><!--//tab-content-->
+				
+				</div><!--//tab-container-->
+			</div><!--//dashboard-applications-container-->
+			
+		</div>        
+	</div> <!-- //bodyContainer-->    
+<footer class="footer">
+		<div class="container">
+			<div class="flex-row">
+				<div class="footer-menu">
+					<h3>Nectar</h3>
+					<ul>	
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">How It Works</a></li>
+						<li><a href="#">Our Benefits</a></li>
+						<li><a href="#">Rates & Terms</a></li>
+					</ul>
+				</div>
+				<div class="footer-menu">
+					<h3>Help</h3>
+					<ul>	
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Contact US</a></li>
+						<li><a href="#">Feedback & Complaints</a></li>						
+					</ul>
+				</div>
+				<div class="footer-menu">
+					<h3>Legal</h3>
+					<ul>	
+						<li><a href="#">Responsible Lending</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>						
+					</ul>
+				</div>
+				<div class="footer-menu">
+					<h1 class="footer-logo"><a href="#" title="Nectar">Nectar</a></h1>
+					<p>We are a New Zealand based company. We use  technology to lower the barriers and cost of borrowing for our customers.</p>
+					<span class="contact-number"><i><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">  
+					  <g id="phone.svg">
+						<path class="cls-1" d="M777.2,1077a4.2,4.2,0,0,1-3.056-1.02c-0.165-.17-0.343-0.34-0.526-0.51-1.171-1.11-2.628-2.5-2.551-4.38,0.053-1.29.811-2.5,2.317-3.72,4.126-3.32,5.889-2.11,7.93-.04l0.319,0.32c0.011,0.01,1.133.54,5.856-4.18,3.852-3.85,4.151-5.31,4.151-5.66,0-.1-0.019-0.12-0.028-0.12l-0.282-.28c-2.073-2.05-3.281-3.82.071-7.97,1.218-1.53,2.436-2.31,3.72-2.36,1.85-.09,3.195,1.35,4.284,2.5,0.183,0.19.36,0.38,0.535,0.55a4.326,4.326,0,0,1,1.052,3.14c-0.008,3.24-2.21,9.19-8.39,15.31C786.953,1074.22,780.978,1077,777.2,1077Zm0.487-9.69c-0.717,0-1.619.46-3.051,1.62a3.47,3.47,0,0,0-1.576,2.24c-0.04.98,1.009,1.97,1.933,2.85,0.195,0.19.384,0.37,0.561,0.55,1.45,1.45,8.491-.26,15.64-7.4l0-.01c5.379-5.32,7.793-10.81,7.8-13.89a2.554,2.554,0,0,0-.467-1.73c-0.187-.18-0.378-0.39-0.573-0.59-0.853-.9-1.827-1.93-2.749-1.88a3.522,3.522,0,0,0-2.25,1.62c-2.481,3.07-1.822,3.72-.227,5.3l0.29,0.28a2.131,2.131,0,0,1,.614,1.54c0,1-.491,2.82-4.736,7.07-2.994,2.99-6.687,6.17-8.675,4.19l-0.331-.34C779.06,1067.89,778.488,1067.31,777.684,1067.31Z" transform="translate(-754 -1030)"/>
+					  </g>
+					</svg>
+					</i><span>0800 123 456</span></span>
+					<ul class="social-bar">
+					
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#">
+								<i class="fa fa-google-plus" aria-hidden="true"></i>
+							</a>
+						</li>						
+						<li>
+							<a href="#">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#">
+								<i class="fa fa-linkedin" aria-hidden="true"></i>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="copyright-bar">
+			<div class="container">
+				<span class="tag-links">Popular Searches: <a href="#">Personal Loan</a>,<a href="#"> Unsecured Loan</a>, <a href="#">Cash Loan</a>, <a href="#">Fast Loan</a>, <a href="#">Online Loans</a>, <a href="#">New Zealand Loans</a></span>
+				<span>© 2016 Nectar. All rights reserved.</span>
+			</div>
+		</div>
+	</footer><!-- //footer-->    
+	
+    <script src="js/jquery-1.12.4.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/site.js"></script>
+  </body>  
+</html>
