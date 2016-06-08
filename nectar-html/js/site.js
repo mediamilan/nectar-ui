@@ -2,6 +2,16 @@ jQuery(document).ready(function( $ ) {
 	$ = jQuery;
 	 
 	/***************************/
+		//MOBILE TOGGLE MENU
+	/**************************/
+	$('.mobile-toggle-menu a').click(function(){
+			$(this).toggleClass('toggled');			
+			$('.nav-bar-right').slideToggle();
+			$('.nav-bar-right').toggleClass('openMenu');
+			return false;
+			
+		});
+	/***************************/
 			//tab-nav
 	/**************************/
 	$('.tab-nav a').click(function(){		
