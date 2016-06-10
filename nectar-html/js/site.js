@@ -13,7 +13,8 @@ jQuery(document).ready(function( $ ) {
 		});
 	/***************************/
 			//tab-nav
-	/**************************/
+	/**************************/	
+	
 	$('.tab-nav a').click(function(){		
 		$('.tab-nav a').removeClass('selected');
 		$('.tab-content').hide();		
@@ -32,4 +33,5 @@ jQuery(document).ready(function( $ ) {
 			$(tabId).show();		
 			return false;
 		});
+	
 });
