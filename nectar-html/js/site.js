@@ -22,5 +22,14 @@ jQuery(document).ready(function( $ ) {
 		$(tabId).show();		
 		return false;
 	});
-
+	
+	
+	$('#mobileResponseTab .res-tab-link').click(function(){
+			$('#mobileResponseTab .res-tab-link').removeClass('toggled');
+			$('.tab-content').hide();
+			$(this).toggleClass('toggled');	
+			var tabId = $(this).attr('href');		
+			$(tabId).show();		
+			return false;
+		});
 });
