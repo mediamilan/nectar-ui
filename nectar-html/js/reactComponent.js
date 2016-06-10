@@ -70,10 +70,10 @@ var applicationsValRow = React.createClass({
     return (
       <tr>
         <td>{dateVal}</td>
-        <th>{loanPurposeVal}</th>
-		<th>{requestedAmountVal}</th>
-		<th>{interestRateVal}</th>
-		<th>{requestedTermVal}</th>
+        <td>{loanPurposeVal}</td>
+		<td>{requestedAmountVal}</td>
+		<td>{interestRateVal}</td>
+		<td>{requestedTermVal}</td>
       </tr>
     );
   }
@@ -199,9 +199,9 @@ var loansValRow = React.createClass({
     return (
       <tr>
         <td>{loandateVal}</td>
-        <th>{loantransaction}</th>
-		<th>{loanTAemount}</th>
-		<th>{loansoutBalance}</th>		
+        <td>{loantransaction}</td>
+		<td>{loanTAemount}</td>
+		<td>{loansoutBalance}</td>		
       </tr>
     );
   }
