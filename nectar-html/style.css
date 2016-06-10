@@ -339,6 +339,9 @@ select:focus{outline:none;}
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow:row wrap;
+      -ms-flex-flow:row wrap;
+          flex-flow:row wrap;
 }
 .form-col {
     float: left;
@@ -490,9 +493,98 @@ ul.social-bar li a:hover{border: 2px solid #ffffff;}
 }
 /****************** END BUTTON ******************/
 
+/******************************/
+	/* START MOBILE VIEW TAB
+/******************************/
+.res-tab-link {
+    text-align: center;
+    display: block;
+    font-size:36px;
+    padding: 18px 15px;
+	margin-bottom: 5px;
+}
+.primary-bgcolor .res-tab-link.toggled{
+	background: #00a9ab;
+    color: #ffffff;	
+}
+.primary-bgcolor .res-tab-link{
+	background: #cccccc;
+    color: #ffffff;	
+}
+.res-tab-link i.fa {
+    font-size: 46px;
+    float: right;
+    line-height: 0.7;
+}
+.response-tab table.table th, .response-tab table.table td{font-size:22px;}
+.response-tab table.table td{text-align:right;}
+.primary-bgcolor .bottom-row{
+	background: #00a9ab;
+	padding:16px;
+	text-align:center;
+}
+.bottom-row a{display:inline-block;float:none;}
+.res-tab-link i.fa{display:none;}
+.res-tab-link i.fa.active{display:inline-block;}
+.response-tab .tab-pane-head li {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 3px 15px;
+	font: 23px Museothin,arial,sans-serif;
+}
+.response-tab .tab-pane-head{padding:18px 0;}
+#mobileResponseTab .tab-pane-head a.primary-drock-btn.button {
+    display: none;
+}
+.response-tab .tab-pane-head ul {
+    width: 100%;
+    float: none;
+}
+#mobileResponseTab .select-box {
+    width: 95%;
+    margin: 0 auto 15px auto;
+	background-position: 96% center;
+	font-size:28px;
+	padding: 5px 6px 6px 15px;
+}
+#mobileResponseTab .select-box select {
+    min-height: 45px;
+    width: 120%;
+	font-size: 78%;	
+}
+.mobileLoanTable td span {
+    display: block;
+}
+.mobileLoanTable tr td:first-child {text-align: left;}
+.mobileLoanTable tr td:last-child span:nth-child(2){font-size:80%;}
+
+.mobileLoanTable tr td:first-child span:first-child {
+    text-decoration: underline;
+}
+.mobileLoanTable tr td span:nth-child(3){ font-weight:100;font-size:80%;}
+.mobileLoanTable tr td span{ font-weight:100; font-size:100%;}
+.mobileLoanTable tr td span:first-child { font-weight:300; font-size:100%;margin-bottom:7px;}
+
+
+
+/******************************/
+	/* END MOBILE VIEW TAB
+/******************************/
+
+.alertDom-head a.primary-drock-btn.button {
+    display: inline-block !important;
+    margin: 10px 0;
+}
+.alertDom-head, .tab-content{display:none;}
+.tab-content.open-tab{display:block;}
 /**** START @media ***/
+#showOnDeskTop{display:block;}
+.mobile-view-dom{display:none;}
 
 @media (max-width:1000px){	
+	#showOnDeskTop{display:none;}
+	.mobile-view-dom{display:block;}
 	.nav-bar-right{display:none;}	
 	.mobile-toggle-menu {
 		display: block;
@@ -531,8 +623,8 @@ ul.social-bar li a:hover{border: 2px solid #ffffff;}
 	.tab-nav ul li {  width: 100%;  margin: 1px 0;}
 	.tab-nav ul li a { font-size: 36px;  text-align: center;}
 	.tab-pane-head ul { width: 100%;}
-	.tab-pane-head li {  font:25px Museothin,arial,sans-serif; margin: 0;  display: block;  text-align: center;  padding: 5px 10px;}
-	.tab-pane-head{padding-top:15px;padding-bottom:15px;text-align: center;}
+	.tab-pane-head li {  font:23px Museothin,arial,sans-serif; margin: 0;  display: block;  text-align: center;  padding: 5px 10px;}
+	.tab-pane-head{padding-top: 5px;padding-bottom: 5px;text-align: center;}
 	.tab-pane-head .button {
 		margin: 0 auto;
 		float: none;
@@ -548,4 +640,24 @@ ul.social-bar li a:hover{border: 2px solid #ffffff;}
 	}
 	.footer .flex-row { padding: 50px 0;}
 	.container { width: 96%;  padding: 0 2%;	}
+	.form-col label{padding: 10px 18px;}
+	.form-tag form { padding: 30px 16px;}
+	.verified svg { width: 30px;}
+	.verified{    font-size: 14px;}
+	.form-col:last-child {  padding-left: 0;}
+	.form-col:first-child {  padding-right:0;}
+	.form-col {float: none; width:100%;}	
+	.form-col .label-row label {  width: 60%;}
+	.button-row { position: relative;}
+	.primary-drock-btn { font-size: 22px;}
+	.loan-status ul li {
+		-webkit-box-flex: 1;
+  -webkit-flex: 1 0 40%;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+	}
+	.loan-status .loan-amount { font-size: 28px;}
+}
+@media (max-width:760px){	
+	
 }

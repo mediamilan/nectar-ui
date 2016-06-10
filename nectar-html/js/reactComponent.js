@@ -1,5 +1,4 @@
 /** @jsx React.DOM **/
-
 /*************************/
 	// TAB NAVIGATION
 /***********************/
@@ -21,6 +20,35 @@ var renderComponentJSX = React.renderComponent(
 /*************************/
 	// TAB-PANE-HEAD
 /***********************/
+/******************/
+// START ALERT DOM
+/*********************/
+var applyAlertDom = React.createClass({
+render: function(){
+	return(
+		<div className="alertDom-head">
+			<ul className="fl">
+				<li>You currently have no in-progress applications with Nectar.</li>
+			</ul>
+			<a className="fr primary-drock-btn button" href="#">Apply Now</a>
+		</div>
+		);
+	}
+});
+
+var loanAlertDom = React.createClass({
+render: function(){
+	return(
+		<div className="alertDom-head">
+			<ul className="fl">
+				<li>You currently have no loan with Nectar</li>
+			</ul>
+			<a className="fr primary-drock-btn button" href="#">Apply Now</a>
+		</div>
+		);
+	}
+});
+
 var rowbutton = React.createClass({
 	render: function(){
 		return (
@@ -29,10 +57,11 @@ var rowbutton = React.createClass({
 	}
 });
 
-var tabpanHead = React.createClass({
+var apptabpanHead = React.createClass({
 render: function(){
 	return (			
-		<div className="tab-pane-head">
+		<div className="tab-pane-head">		
+			<applyAlertDom />
 			<ul className="fl">
 				<li>Loan Application: N-123012</li>
 				<li className="status">
@@ -97,7 +126,7 @@ var FilterableProductTable = React.createClass({
   render: function() {
     return (
       <div className="tab-pane-table">   
-		<tabpanHead />
+		<apptabpanHead />
         <ProductTable applications={this.props.applications} />
       </div>
     );
@@ -156,11 +185,13 @@ var loansRowbutton = React.createClass({
 
 var loanstabpanHead = React.createClass({
 	render: function(){
-		return ( <div className="tab-pane-head">
+		return ( <div className="tab-pane-head">	
+					<loanAlertDom />
 					<ul className="fl">
 						<li className="select-tag">										
 							<div className="select-box">
 							   <select>
+								  <option>Select Period</option>
 								  <option>January 2016</option>
 								  <option>February 2016</option>
 								  <option>March 2016</option>
@@ -330,4 +361,137 @@ var profileTab = React.createClass({
 var profileForm = React.renderComponent(	
 	<profileTab />,
 	document.getElementById('pane-group-3')
+);
+/**************************************/
+
+/****************************/
+/* START MOBILE VIEW TAB */
+/*****************************/
+
+var responsAllTable = React.createClass({
+  render: function(){
+    return (
+		<table className="table">
+			<tbody>
+				<tr>
+					<th>Date</th>
+					<td>10 Apr 2016</td>
+				</tr>
+				<tr>
+					<th>Loan Purpose</th>
+					<td>Holiday</td>	
+				</tr>
+				<tr>
+					<th>Requested Amount</th>
+					<td>$2,000</td>		
+				</tr>
+				<tr>
+					<th>Interest Rate</th>
+					<td>4.99%</td>	
+				</tr>
+				<tr>
+					<th>Requested Term</th>
+					<td>12 months</td>
+				</tr>												
+			</tbody>									
+		</table>
+	 );
+  }
+});
+
+var responsTabGroup = React.createClass({
+  render: function(){
+    return (
+		<ul>
+			<li className="tab-row">
+				<h2>
+					<a href="#applications_tab" title="Applications" className="res-tab-link toggled">
+						<span>Applications</span>
+						<i className="fa fa-angle-up active" aria-hidden="true"></i>
+						<i className="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				</h2>
+				<div id="applications_tab" className="tab-content open-tab">
+					<div className="pane-group">
+						<apptabpanHead />
+						<div className="tab-pane-table">
+							<responsAllTable />
+							<div className="bottom-row"><rowbutton /></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li className="tab-row">
+				<h2>
+					<a href="#loan_status_tab" title="Loan Status" className="res-tab-link">
+						<span>Loan Status</span>
+						<i className="fa fa-angle-up" aria-hidden="true"></i>
+						<i className="fa fa-angle-down active" aria-hidden="true"></i>
+					</a>
+				</h2>
+				<div id="loan_status_tab" className="tab-content">
+					<div className="pane-group">
+					<loanstatusList />
+					<loanstabpanHead />
+					<table className="table mobileLoanTable">
+						<tbody>
+							<tr>
+								<td><span>10 Feb 2016</span></td>
+								<td><span>$4,200</span><span>Closing Balance</span></td>
+							</tr>
+							<tr>
+								<td><span>05 Feb 2016</span><span>+ $20</span><span>Interest</span></td>
+								<td><span>$4,920</span></td>
+							</tr>
+							<tr>
+								<td><span>13 Jan 2016</span><span>+ $500</span><span>Advance</span></td>
+								<td><span>$4,900</span></td>
+							</tr>
+							<tr>
+								<td>
+									<span>12 Jan 2016</span>
+									<span>+ $100</span>
+									<span>Repayment</span>
+								</td>
+								<td>
+									<span>$4,400</span>
+									
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span>10 Jan 2016</span>								
+								</td>
+								<td>
+									<span>$4,500</span><span>Opening Balance</span>
+								</td>
+								</tr>
+							</tbody>									
+						</table>
+						<div className="bottom-row"><loansRowbutton /></div>
+					</div>
+				</div>
+		   </li>
+			<li className="tab-row">
+				<h2>
+					<a href="#profile_tab" title="Profile" className="res-tab-link">
+						<span>Profile</span>
+						<i className="fa fa-angle-up" aria-hidden="true"></i>
+						<i className="fa fa-angle-down active" aria-hidden="true"></i>
+					</a>
+				</h2>
+				<div id="profile_tab" className="tab-content">
+					<div className="pane-group">
+						<profileTab />
+					</div>
+				</div>
+			</li>
+		</ul>
+	 );
+  }
+});
+
+var momViewTabGroup = React.renderComponent(	
+	<responsTabGroup />,
+	document.getElementById('mobileResponseTab')
 );

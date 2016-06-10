@@ -44,292 +44,73 @@
 					<h2 class="big-title">Dashboard</h2>
 					<h3 class="md-title">Welcome, Joe!</h3>
 				</div>
-				<div class="tab-container primary-bgcolor">
-					<div class="tab-nav">
+				
+				<div id="showOnDeskTop" class="tab-container primary-bgcolor">
+					<div id="tab-nav" class="tab-nav">
 						<ul>
 							<li><a class="selected" href="#applications-tab">Applications</a></li>
 							<li><a href="#loan-status-tab">Loan Status</a></li>
 							<li><a href="#profile-tab">Profile</a></li>
-						</ul>	
-					</div>
-					
+						</ul>
+					</div>					
 					<div id="applications-tab" class="tab-content" style="display:block;">					
-						<div class="pane-group">
-							<div class="tab-pane-head">
-								<ul class="fl">
-									<li>Loan Application: N-123012</li>
-									<li class="status">
-										<i class="icon offer-made">
-											<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 64 64"><g id="tick.svg">
-											<path class="cls-1" d="M1190.76,1178.95l-9.28-11.67a1.994,1.994,0,0,1,.31-2.79,1.966,1.966,0,0,1,2.78.31l6.52,8.2,20.17-20.29a1.956,1.956,0,0,1,2.79,0,2,2,0,0,1,0,2.81Z" transform="translate(-1166 -1134)"/>
-										  </g></svg>
-									</i>Status: offer made</li>
-								</ul>
-								<a class="fr primary-drock-btn button" href="#">Proceed with offer</a>
-							</div>
-							<div class="tab-pane-table">
-								<table class="table">
-									<tbody>
-										<tr>
-											<th>Date</th>
-											<th>Loan Purpose</th>
-											<th>Requested Amount</th>
-											<th>Interest Rate</th>
-											<th>Requested Term</th>
+						<div id="pane-group-1" class="pane-group">
+							<div class="tab-pane-table" data-reactid=".1">
+								<div class="tab-pane-head" data-reactid=".1.0">
+									<div class="alertDom-head" data-reactid=".1.0.0">
+										<ul class="fl" data-reactid=".1.0.0.0">
+											<li data-reactid=".1.0.0.0.0">You currently have no in-progress applications with Nectar.</li>
+										</ul>
+										<a class="fr primary-drock-btn button" href="#" data-reactid=".1.0.0.1">Apply Now</a>
+									</div>
+									<ul class="fl" data-reactid=".1.0.1">
+										<li data-reactid=".1.0.1.0">Loan Application: N-123012</li>
+										<li class="status" data-reactid=".1.0.1.1">
+											<i class="icon offer-made" data-reactid=".1.0.1.1.0"><svg width="25" height="25" viewBox="0 0 64 64" data-reactid=".1.0.1.1.0.0"><g id="tick.svg" data-reactid=".1.0.1.1.0.0.0"><path class="cls-1" d="M1190.76,1178.95l-9.28-11.67a1.994,1.994,0,0,1,.31-2.79,1.966,1.966,0,0,1,2.78.31l6.52,8.2,20.17-20.29a1.956,1.956,0,0,1,2.79,0,2,2,0,0,1,0,2.81Z" transform="translate(-1166 -1134)" data-reactid=".1.0.1.1.0.0.0.0"></path></g></svg></i>
+											<span data-reactid=".1.0.1.1.1">Status: offer made</span>
+										</li>
+									</ul>
+									<a class="fr primary-drock-btn button" href="#" data-reactid=".1.0.2">Proceed with offer</a>
+								</div>
+								<table class="table" data-reactid=".1.1">
+									<tbody data-reactid=".1.1.0">
+										<tr data-reactid=".1.1.0.0">
+											<th data-reactid=".1.1.0.0.0">Date</th>
+											<th data-reactid=".1.1.0.0.1">Loan Purpose</th>
+											<th data-reactid=".1.1.0.0.2">Requested Amount</th>
+											<th data-reactid=".1.1.0.0.3">Interest Rate</th>
+											<th data-reactid=".1.1.0.0.4">Requested Term</th>
 										</tr>
-										<tr>
-											<td>10 Apr 2016</td>
-											<td>Holiday</td>
-											<td>$2,000</td>
-											<td>4.99%</td>
-											<td>12 months</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div><!--//pane-group-->
-						
-						<div class="pane-group">
-							<div class="tab-pane-head">
-								<ul class="fl">
-									<li>Loan Application: N-123456</li>
-									<li class="status">
-										<i class="icon completed-made">
-											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 64">
-											  
-											  <g id="asterisk.svg">
-												<path id="Ellipse_1_copy_6" data-name="Ellipse 1 copy 6" class="cls-1" d="M1094,1154a12,12,0,1,1-12,12A12,12,0,0,1,1094,1154Zm0,4a8,8,0,1,1-8,8A8,8,0,0,1,1094,1158Z" transform="translate(-1062 -1134)"/>
-											  </g>
-											</svg>
-									</i>Status: partially completed</li>
-								</ul>
-								<a class="fr primary-drock-btn button" href="#">Proceed with application</a>
-							</div>
-							<div class="tab-pane-table">
-								<table class="table">
-									<tbody>
-										<tr>
-											<th>Date</th>
-											<th>Loan Purpose</th>
-											<th>Requested Amount</th>
-											<th>Interest Rate</th>
-											<th>Requested Term</th>
-										</tr>
-										<tr>
-											<td>10 Feb 2016</td>
-											<td>Debt consolidation</td>
-											<td>$5,000</td>
-											<td>4.99%</td>
-											<td>n/a</td>
+										<tr data-reactid=".1.1.0.1:0">
+											<td data-reactid=".1.1.0.1:0.0">10 Apr 2016</td>
+											<td data-reactid=".1.1.0.1:0.1">Holiday</td>
+											<td data-reactid=".1.1.0.1:0.2">4.99%</td>
+											<td data-reactid=".1.1.0.1:0.3">4.99%</td>
+											<td data-reactid=".1.1.0.1:0.4">12 months</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
 						</div><!--//pane-group-->
-						
-						<div class="pane-group">
-							<div class="tab-pane-head">
-								<ul class="fl">
-									<li>Loan Application: N-123012</li>
-									<li class="status">
-										<i class="icon unsuccessful-made">
-											<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 64 64">
-											 
-											  <g id="close.svg">
-												<path id="Rounded_Rectangle_7_copy_3" data-name="Rounded Rectangle 7 copy 3" class="cls-1" d="M874.555,970.574l27.987-27.987a2.03,2.03,0,0,1,2.871,2.871l-27.987,27.987A2.03,2.03,0,0,1,874.555,970.574Z" transform="translate(-858 -926)"/>
-												<path id="Rounded_Rectangle_7_copy_4" data-name="Rounded Rectangle 7 copy 4" class="cls-1" d="M877.126,942.8L904.7,970.374a2,2,0,0,1-2.829,2.829L874.3,945.626A2,2,0,0,1,877.126,942.8Z" transform="translate(-858 -926)"/>
-											  </g>
-											</svg>
-									</i>Status: unsuccessful</li>
-								</ul>
-								<a class="fr primary-drock-btn button" href="#">Contact customer care</a>
-							</div>
-							<div class="tab-pane-table">
-								<table class="table">
-									<tbody>
-										<tr>
-											<th>Date</th>
-											<th>Loan Purpose</th>
-											<th>Requested Amount</th>
-											<th>Interest Rate</th>
-											<th>Requested Term</th>
-										</tr>
-										<tr>
-											<td>10 Apr 2016</td>
-											<td>Holiday</td>
-											<td>$2,000</td>
-											<td>n/a</td>
-											<td>n/a</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div><!--//pane-group-->						
 					</div><!--//tab-content-->
 					
-					<div id="loan-status-tab" class="tab-content" style="display:none;">					
-						<div class="pane-group">
-							<div class="loan-status">
-								<ul>
-									<li>
-										<span class="loan-amount">$5,000</span>
-										<span>Loan Amount</span>
-										<span class="small-text">$4.99% Interest Rate</span>
-									</li>
-									<li>
-										<span class="loan-amount">15.06.16</span>
-										<span>Next Payment Date</span>										
-									</li>
-									<li>
-										<span class="loan-amount">$280</span>
-										<span>Next Payment Amount</span>										
-									</li>
-									<li>
-										<span class="loan-amount">$4,200</span>
-										<span>Outstanding Balance</span>										
-									</li>
-								</ul>
-							</div>
-							<div class="tab-pane-head">
-								<ul class="fl">
-									<li class="select-tag">										
-										<div class="select-box">
-										   <select>
-											  <option>January 2016</option>
-											  <option>February 2016</option>
-											  <option>March 2016</option>
-											  <option>April 2016</option>
-											  <option>May 2016</option>
-											</select>
-										 </div>																			
-									</li>									
-									<li>10 Jan 2016 - 10 Feb 2016</li>									
-								</ul>
-								<a class="fr primary-drock-btn button" href="#">Apply for top-up</a>
-							</div>
-							<div class="tab-pane-table">
-								<table class="table">
-									<tbody>
-										<tr>
-											<th>Date</th>
-											<th>Transaction</th>
-											<th>Amount</th>
-											<th>Outstanding Balance</th>											
-										</tr>
-										<tr>
-											<td>10 Feb 2016</td>
-											<td>Closing Balance</td>
-											<td></td>
-											<td>$4,200</td>											
-										</tr>
-										<tr>
-											<td>05 Feb 2016</td>
-											<td>Interest</td>
-											<td>+ $20</td>
-											<td>$4,920</td>											
-										</tr>
-										<tr>
-											<td>13 Jan 2016</td>
-											<td>Advance</td>
-											<td>+ $500</td>
-											<td>$4,900</td>											
-										</tr>
-										<tr>
-											<td>12 Jan 2016</td>
-											<td>Repayment</td>
-											<td>+ $100</td>
-											<td>$4,400</td>											
-										</tr>										
-										<tr>
-											<td>10 Jan 2016</td>
-											<td>Opening Balance</td>
-											<td></td>
-											<td>$4,500</td>											
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div><!--//pane-group-->						
+					<div id="loan-status-tab" class="tab-content" style="display:none;">						
+						<div id="pane-group-2" class="pane-group"><div class="tab-pane-table" data-reactid=".2"><div class="loan-status" data-reactid=".2.0"><ul data-reactid=".2.0.0"><li data-reactid=".2.0.0.0"><span class="loan-amount" data-reactid=".2.0.0.0.0">$5,000</span><span data-reactid=".2.0.0.0.1">Loan Amount</span><span class="small-text" data-reactid=".2.0.0.0.2">$4.99% Interest Rate</span></li><li data-reactid=".2.0.0.1"><span class="loan-amount" data-reactid=".2.0.0.1.0">15.06.16</span><span data-reactid=".2.0.0.1.1">Next Payment Date</span></li><li data-reactid=".2.0.0.2"><span class="loan-amount" data-reactid=".2.0.0.2.0">$280</span><span data-reactid=".2.0.0.2.1">Next Payment Amount</span></li><li data-reactid=".2.0.0.3"><span class="loan-amount" data-reactid=".2.0.0.3.0">$4,200</span><span data-reactid=".2.0.0.3.1">Outstanding Balance</span></li></ul></div><div class="tab-pane-head" data-reactid=".2.1"><div class="alertDom-head" data-reactid=".2.1.0"><ul class="fl" data-reactid=".2.1.0.0"><li data-reactid=".2.1.0.0.0">You currently have no loan with Nectar</li></ul><a class="fr primary-drock-btn button" href="#" data-reactid=".2.1.0.1">Apply Now</a></div><ul class="fl" data-reactid=".2.1.1"><li class="select-tag" data-reactid=".2.1.1.0"><div class="select-box" data-reactid=".2.1.1.0.0"><select data-reactid=".2.1.1.0.0.0"><option data-reactid=".2.1.1.0.0.0.0">Select Period</option><option data-reactid=".2.1.1.0.0.0.1">January 2016</option><option data-reactid=".2.1.1.0.0.0.2">February 2016</option><option data-reactid=".2.1.1.0.0.0.3">March 2016</option><option data-reactid=".2.1.1.0.0.0.4">April 2016</option><option data-reactid=".2.1.1.0.0.0.5">May 2016</option></select></div></li><li data-reactid=".2.1.1.1">10 Jan 2016 - 10 Feb 2016</li></ul><a class="fr primary-drock-btn button" href="#" data-reactid=".2.1.2">Apply for top-up</a></div><table class="table" data-reactid=".2.2"><tbody data-reactid=".2.2.0"><tr data-reactid=".2.2.0.0"><th data-reactid=".2.2.0.0.0">Date</th><th data-reactid=".2.2.0.0.1">Transaction</th><th data-reactid=".2.2.0.0.2">Amount</th><th data-reactid=".2.2.0.0.3">Outstanding Balance</th></tr><tr data-reactid=".2.2.0.1:0"><td data-reactid=".2.2.0.1:0.0">10 Feb 2016</td><td data-reactid=".2.2.0.1:0.1">Closing Balance</td><td data-reactid=".2.2.0.1:0.2"></td><td data-reactid=".2.2.0.1:0.3">$4,200</td></tr><tr data-reactid=".2.2.0.1:1"><td data-reactid=".2.2.0.1:1.0">05 Feb 2016</td><td data-reactid=".2.2.0.1:1.1">Interest</td><td data-reactid=".2.2.0.1:1.2">+ $20</td><td data-reactid=".2.2.0.1:1.3">$4,920</td></tr><tr data-reactid=".2.2.0.1:2"><td data-reactid=".2.2.0.1:2.0">13 Jan 2016</td><td data-reactid=".2.2.0.1:2.1">Advance</td><td data-reactid=".2.2.0.1:2.2">+ $500</td><td data-reactid=".2.2.0.1:2.3">$4,900</td></tr><tr data-reactid=".2.2.0.1:3"><td data-reactid=".2.2.0.1:3.0">12 Jan 2016</td><td data-reactid=".2.2.0.1:3.1">Repayment</td><td data-reactid=".2.2.0.1:3.2">+ $100</td><td data-reactid=".2.2.0.1:3.3">$4,400</td></tr><tr data-reactid=".2.2.0.1:4"><td data-reactid=".2.2.0.1:4.0">10 Jan 2016</td><td data-reactid=".2.2.0.1:4.1">Opening Balance</td><td data-reactid=".2.2.0.1:4.2"></td><td data-reactid=".2.2.0.1:4.3">$4,500</td></tr></tbody></table></div></div><!--//pane-group-->						
 					</div><!--//tab-content-->
 					
 					<div id="profile-tab" class="tab-content" style="display:none;">					
-						<div class="pane-group">						
-							<div class="form-tag">
-								<form>
-									<div class="form-row">
-										<div class="select-tag selectSex">										
-											<div class="select-box">
-											   <select>
-												  <option>Mr</option>
-												  <option>Mrs</option>												  
-												</select>
-											 </div>																			
-										</div>
-									</div>
-									
-									<div class="form-row">
-										<div class="form-col">
-											
-											<label>
-												First name
-												<input type="text" class="type-text"/>
-											</label>
-											
-											<label>
-												Middle name
-												<input type="text" class="type-text"/>
-											</label>
-											<label>
-												Last name
-												<input type="text" class="type-text"/>
-											</label>
-											<div class="label-row">
-												<label>
-													Email address
-													<input type="email" class="type-text"/>													
-												</label>
-												<span class="verified"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 64 64"><g id="tick.svg">
-													<path class="cls-1" d="M1190.76,1178.95l-9.28-11.67a1.994,1.994,0,0,1,.31-2.79,1.966,1.966,0,0,1,2.78.31l6.52,8.2,20.17-20.29a1.956,1.956,0,0,1,2.79,0,2,2,0,0,1,0,2.81Z" transform="translate(-1166 -1134)"/>
-												  </g></svg> Verified</span>
-											</div>
-											<label>
-												Mobile number
-												<input type="text" class="type-text"/>
-											</label>											
-											<label>
-												Date of birth
-												<input type="text" class="type-text"/>
-												<span class="calendar-icon"></span>
-											</label>											
-										</div>										
-										<div class="form-col">
-											<label>
-												Address
-												<input type="text" class="type-text"/>
-											</label>
-											<label>
-												Town / City
-												<input type="text" class="type-text"/>
-											</label>
-											<label>
-												Postcode
-												<input type="text" class="type-text"/>
-											</label>
-											
-											<div class="button-row">
-												<a href="#">Change password</a>
-												<input type="submit" class="primary-drock-btn" value="Save" />
-											</div>
-										</div>										
-									</div>
-								</form>
-							</div><!--//form-tag-->
-						</div><!--//pane-group-->						
-					</div><!--//tab-content-->
+						<div id="pane-group-3" class="pane-group"><div class="form-tag" data-reactid=".3"><form data-reactid=".3.0"><div class="form-row" data-reactid=".3.0.0"><div class="select-tag selectSex" data-reactid=".3.0.0.0"><div class="select-box" data-reactid=".3.0.0.0.0"><select data-reactid=".3.0.0.0.0.0"><option data-reactid=".3.0.0.0.0.0.0">Mr</option><option data-reactid=".3.0.0.0.0.0.1">Mrs</option></select></div></div></div><div class="form-row" data-reactid=".3.0.1"><div class="form-col" data-reactid=".3.0.1.0"><label data-reactid=".3.0.1.0.0"><span data-reactid=".3.0.1.0.0.0">First name</span><input type="text" class="type-text" data-reactid=".3.0.1.0.0.1"></label><label data-reactid=".3.0.1.0.1"><span data-reactid=".3.0.1.0.1.0">Middle name</span><input type="text" class="type-text" data-reactid=".3.0.1.0.1.1"></label><label data-reactid=".3.0.1.0.2"><span data-reactid=".3.0.1.0.2.0">Last name</span><input type="text" class="type-text" data-reactid=".3.0.1.0.2.1"></label><div class="label-row" data-reactid=".3.0.1.0.3"><label data-reactid=".3.0.1.0.3.0"><span data-reactid=".3.0.1.0.3.0.0">Email address</span><input type="email" class="type-text" data-reactid=".3.0.1.0.3.0.1"></label><span class="verified" data-reactid=".3.0.1.0.3.1"><svg width="45" height="45" viewBox="0 0 64 64" data-reactid=".3.0.1.0.3.1.0"><g id="tick.svg" data-reactid=".3.0.1.0.3.1.0.0"><path class="cls-1" d="M1190.76,1178.95l-9.28-11.67a1.994,1.994,0,0,1,.31-2.79,1.966,1.966,0,0,1,2.78.31l6.52,8.2,20.17-20.29a1.956,1.956,0,0,1,2.79,0,2,2,0,0,1,0,2.81Z" transform="translate(-1166 -1134)" data-reactid=".3.0.1.0.3.1.0.0.0"></path></g></svg><span data-reactid=".3.0.1.0.3.1.1"> Verified</span></span></div><label data-reactid=".3.0.1.0.4"><span data-reactid=".3.0.1.0.4.0">Mobile number</span><input type="text" class="type-text" data-reactid=".3.0.1.0.4.1"></label><label data-reactid=".3.0.1.0.5"><span data-reactid=".3.0.1.0.5.0">Date of birth</span><input type="text" class="type-text" data-reactid=".3.0.1.0.5.1"><span class="calendar-icon" data-reactid=".3.0.1.0.5.2"></span></label></div><div class="form-col" data-reactid=".3.0.1.1"><label data-reactid=".3.0.1.1.0"><span data-reactid=".3.0.1.1.0.0">Address</span><input type="text" class="type-text" data-reactid=".3.0.1.1.0.1"></label><label data-reactid=".3.0.1.1.1"><span data-reactid=".3.0.1.1.1.0">Town / City</span><input type="text" class="type-text" data-reactid=".3.0.1.1.1.1"></label><label data-reactid=".3.0.1.1.2"><span data-reactid=".3.0.1.1.2.0">Postcode</span><input type="text" class="type-text" data-reactid=".3.0.1.1.2.1"></label><div class="button-row" data-reactid=".3.0.1.1.3"><a href="#" data-reactid=".3.0.1.1.3.0">Change password</a><input type="submit" class="primary-drock-btn" value="Save" data-reactid=".3.0.1.1.3.1"></div></div></div></form></div></div><!--//pane-group-->						
+					</div><!--//tab-content-->					
 				</div><!--//tab-container-->
+				
+				<div class="mobile-view-dom">
+					<div id="mobileResponseTab" class="response-tab primary-bgcolor"><ul data-reactid=".4"><li class="tab-row" data-reactid=".4.0"><h2 data-reactid=".4.0.0"><a href="#applications_tab" title="Applications" class="res-tab-link toggled" data-reactid=".4.0.0.0"><span data-reactid=".4.0.0.0.0">Applications</span><i class="fa fa-angle-up active" aria-hidden="true" data-reactid=".4.0.0.0.1"></i><i class="fa fa-angle-down" aria-hidden="true" data-reactid=".4.0.0.0.2"></i></a></h2><div id="applications_tab" class="tab-content" data-reactid=".4.0.1"><div class="pane-group" data-reactid=".4.0.1.0"><div class="tab-pane-head" data-reactid=".4.0.1.0.0"><div class="alertDom-head" data-reactid=".4.0.1.0.0.0"><ul class="fl" data-reactid=".4.0.1.0.0.0.0"><li data-reactid=".4.0.1.0.0.0.0.0">You currently have no in-progress applications with Nectar.</li></ul><a class="fr primary-drock-btn button" href="#" data-reactid=".4.0.1.0.0.0.1">Apply Now</a></div><ul class="fl" data-reactid=".4.0.1.0.0.1"><li data-reactid=".4.0.1.0.0.1.0">Loan Application: N-123012</li><li class="status" data-reactid=".4.0.1.0.0.1.1"><i class="icon offer-made" data-reactid=".4.0.1.0.0.1.1.0"><svg width="25" height="25" viewBox="0 0 64 64" data-reactid=".4.0.1.0.0.1.1.0.0"><g id="tick.svg" data-reactid=".4.0.1.0.0.1.1.0.0.0"><path class="cls-1" d="M1190.76,1178.95l-9.28-11.67a1.994,1.994,0,0,1,.31-2.79,1.966,1.966,0,0,1,2.78.31l6.52,8.2,20.17-20.29a1.956,1.956,0,0,1,2.79,0,2,2,0,0,1,0,2.81Z" transform="translate(-1166 -1134)" data-reactid=".4.0.1.0.0.1.1.0.0.0.0"></path></g></svg></i><span data-reactid=".4.0.1.0.0.1.1.1">Status: offer made</span></li></ul><a class="fr primary-drock-btn button" href="#" data-reactid=".4.0.1.0.0.2">Proceed with offer</a></div><div class="tab-pane-table" data-reactid=".4.0.1.0.1"><table class="table" data-reactid=".4.0.1.0.1.0"><tbody data-reactid=".4.0.1.0.1.0.0"><tr data-reactid=".4.0.1.0.1.0.0.0"><th data-reactid=".4.0.1.0.1.0.0.0.0">Date</th><td data-reactid=".4.0.1.0.1.0.0.0.1">10 Apr 2016</td></tr><tr data-reactid=".4.0.1.0.1.0.0.1"><th data-reactid=".4.0.1.0.1.0.0.1.0">Loan Purpose</th><td data-reactid=".4.0.1.0.1.0.0.1.1">Holiday</td></tr><tr data-reactid=".4.0.1.0.1.0.0.2"><th data-reactid=".4.0.1.0.1.0.0.2.0">Requested Amount</th><td data-reactid=".4.0.1.0.1.0.0.2.1">$2,000</td></tr><tr data-reactid=".4.0.1.0.1.0.0.3"><th data-reactid=".4.0.1.0.1.0.0.3.0">Interest Rate</th><td data-reactid=".4.0.1.0.1.0.0.3.1">4.99%</td></tr><tr data-reactid=".4.0.1.0.1.0.0.4"><th data-reactid=".4.0.1.0.1.0.0.4.0">Requested Term</th><td data-reactid=".4.0.1.0.1.0.0.4.1">12 months</td></tr></tbody></table><div class="bottom-row" data-reactid=".4.0.1.0.1.1"><a class="fr primary-drock-btn button" href="#" data-reactid=".4.0.1.0.1.1.0">Proceed with offer</a></div></div></div></div></li><li class="tab-row" data-reactid=".4.1"><h2 data-reactid=".4.1.0"><a href="#loan-status_tab" title="Loan Status" class="res-tab-link" data-reactid=".4.1.0.0"><span data-reactid=".4.1.0.0.0">Loan Status</span><i class="fa fa-angle-up" aria-hidden="true" data-reactid=".4.1.0.0.1"></i><i class="fa fa-angle-down active" aria-hidden="true" data-reactid=".4.1.0.0.2"></i></a></h2><div class="loan-status" data-reactid=".4.1.1"><ul data-reactid=".4.1.1.0"><li data-reactid=".4.1.1.0.0"><span class="loan-amount" data-reactid=".4.1.1.0.0.0">$5,000</span><span data-reactid=".4.1.1.0.0.1">Loan Amount</span><span class="small-text" data-reactid=".4.1.1.0.0.2">$4.99% Interest Rate</span></li><li data-reactid=".4.1.1.0.1"><span class="loan-amount" data-reactid=".4.1.1.0.1.0">15.06.16</span><span data-reactid=".4.1.1.0.1.1">Next Payment Date</span></li><li data-reactid=".4.1.1.0.2"><span class="loan-amount" data-reactid=".4.1.1.0.2.0">$280</span><span data-reactid=".4.1.1.0.2.1">Next Payment Amount</span></li><li data-reactid=".4.1.1.0.3"><span class="loan-amount" data-reactid=".4.1.1.0.3.0">$4,200</span><span data-reactid=".4.1.1.0.3.1">Outstanding Balance</span></li></ul></div><div class="tab-pane-head" data-reactid=".4.1.2"><div class="alertDom-head" data-reactid=".4.1.2.0"><ul class="fl" data-reactid=".4.1.2.0.0"><li data-reactid=".4.1.2.0.0.0">You currently have no loan with Nectar</li></ul><a class="fr primary-drock-btn button" href="#" data-reactid=".4.1.2.0.1">Apply Now</a></div><ul class="fl" data-reactid=".4.1.2.1"><li class="select-tag" data-reactid=".4.1.2.1.0"><div class="select-box" data-reactid=".4.1.2.1.0.0"><select data-reactid=".4.1.2.1.0.0.0"><option data-reactid=".4.1.2.1.0.0.0.0">Select Period</option><option data-reactid=".4.1.2.1.0.0.0.1">January 2016</option><option data-reactid=".4.1.2.1.0.0.0.2">February 2016</option><option data-reactid=".4.1.2.1.0.0.0.3">March 2016</option><option data-reactid=".4.1.2.1.0.0.0.4">April 2016</option><option data-reactid=".4.1.2.1.0.0.0.5">May 2016</option></select></div></li><li data-reactid=".4.1.2.1.1">10 Jan 2016 - 10 Feb 2016</li></ul><a class="fr primary-drock-btn button" href="#" data-reactid=".4.1.2.2">Apply for top-up</a></div><table class="table mobileLoanTable" data-reactid=".4.1.3"><tbody data-reactid=".4.1.3.0"><tr data-reactid=".4.1.3.0.0"><td data-reactid=".4.1.3.0.0.0"><span data-reactid=".4.1.3.0.0.0.0">10 Feb 2016</span></td><td data-reactid=".4.1.3.0.0.1"><span data-reactid=".4.1.3.0.0.1.0">$4,200</span><span data-reactid=".4.1.3.0.0.1.1">Closing Balance</span></td></tr><tr data-reactid=".4.1.3.0.1"><td data-reactid=".4.1.3.0.1.0"><span data-reactid=".4.1.3.0.1.0.0">05 Feb 2016</span><span data-reactid=".4.1.3.0.1.0.1">+ $20</span><span data-reactid=".4.1.3.0.1.0.2">Interest</span></td><td data-reactid=".4.1.3.0.1.1"><span data-reactid=".4.1.3.0.1.1.0">$4,920</span></td></tr><tr data-reactid=".4.1.3.0.2"><td data-reactid=".4.1.3.0.2.0"><span data-reactid=".4.1.3.0.2.0.0">13 Jan 2016</span><span data-reactid=".4.1.3.0.2.0.1">+ $500</span><span data-reactid=".4.1.3.0.2.0.2">Advance</span></td><td data-reactid=".4.1.3.0.2.1"><span data-reactid=".4.1.3.0.2.1.0">$4,900</span></td></tr><tr data-reactid=".4.1.3.0.3"><td data-reactid=".4.1.3.0.3.0"><span data-reactid=".4.1.3.0.3.0.0">12 Jan 2016</span><span data-reactid=".4.1.3.0.3.0.1">+ $100</span><span data-reactid=".4.1.3.0.3.0.2">Repayment</span></td><td data-reactid=".4.1.3.0.3.1"><span data-reactid=".4.1.3.0.3.1.0">$4,400</span></td></tr><tr data-reactid=".4.1.3.0.4"><td data-reactid=".4.1.3.0.4.0"><span data-reactid=".4.1.3.0.4.0.0">10 Jan 2016</span></td><td data-reactid=".4.1.3.0.4.1"><span data-reactid=".4.1.3.0.4.1.0">$4,500</span><span data-reactid=".4.1.3.0.4.1.1">Opening Balance</span></td></tr></tbody></table><div class="bottom-row" data-reactid=".4.1.4"><a class="fr primary-drock-btn button" href="#" data-reactid=".4.1.4.0">Apply for top-up</a></div></li><li class="tab-row" data-reactid=".4.2"><h2 data-reactid=".4.2.0"><a href="#profile_tab" title="Profile" class="res-tab-link" data-reactid=".4.2.0.0"><span data-reactid=".4.2.0.0.0">Profile</span><i class="fa fa-angle-up" aria-hidden="true" data-reactid=".4.2.0.0.1"></i><i class="fa fa-angle-down active" aria-hidden="true" data-reactid=".4.2.0.0.2"></i></a></h2><div class="form-tag" data-reactid=".4.2.1"><form data-reactid=".4.2.1.0"><div class="form-row" data-reactid=".4.2.1.0.0"><div class="select-tag selectSex" data-reactid=".4.2.1.0.0.0"><div class="select-box" data-reactid=".4.2.1.0.0.0.0"><select data-reactid=".4.2.1.0.0.0.0.0"><option data-reactid=".4.2.1.0.0.0.0.0.0">Mr</option><option data-reactid=".4.2.1.0.0.0.0.0.1">Mrs</option></select></div></div></div><div class="form-row" data-reactid=".4.2.1.0.1"><div class="form-col" data-reactid=".4.2.1.0.1.0"><label data-reactid=".4.2.1.0.1.0.0"><span data-reactid=".4.2.1.0.1.0.0.0">First name</span><input type="text" class="type-text" data-reactid=".4.2.1.0.1.0.0.1"></label><label data-reactid=".4.2.1.0.1.0.1"><span data-reactid=".4.2.1.0.1.0.1.0">Middle name</span><input type="text" class="type-text" data-reactid=".4.2.1.0.1.0.1.1"></label><label data-reactid=".4.2.1.0.1.0.2"><span data-reactid=".4.2.1.0.1.0.2.0">Last name</span><input type="text" class="type-text" data-reactid=".4.2.1.0.1.0.2.1"></label><div class="label-row" data-reactid=".4.2.1.0.1.0.3"><label data-reactid=".4.2.1.0.1.0.3.0"><span data-reactid=".4.2.1.0.1.0.3.0.0">Email address</span><input type="email" class="type-text" data-reactid=".4.2.1.0.1.0.3.0.1"></label><span class="verified" data-reactid=".4.2.1.0.1.0.3.1"><svg width="45" height="45" viewBox="0 0 64 64" data-reactid=".4.2.1.0.1.0.3.1.0"><g id="tick.svg" data-reactid=".4.2.1.0.1.0.3.1.0.0"><path class="cls-1" d="M1190.76,1178.95l-9.28-11.67a1.994,1.994,0,0,1,.31-2.79,1.966,1.966,0,0,1,2.78.31l6.52,8.2,20.17-20.29a1.956,1.956,0,0,1,2.79,0,2,2,0,0,1,0,2.81Z" transform="translate(-1166 -1134)" data-reactid=".4.2.1.0.1.0.3.1.0.0.0"></path></g></svg><span data-reactid=".4.2.1.0.1.0.3.1.1"> Verified</span></span></div><label data-reactid=".4.2.1.0.1.0.4"><span data-reactid=".4.2.1.0.1.0.4.0">Mobile number</span><input type="text" class="type-text" data-reactid=".4.2.1.0.1.0.4.1"></label><label data-reactid=".4.2.1.0.1.0.5"><span data-reactid=".4.2.1.0.1.0.5.0">Date of birth</span><input type="text" class="type-text" data-reactid=".4.2.1.0.1.0.5.1"><span class="calendar-icon" data-reactid=".4.2.1.0.1.0.5.2"></span></label></div><div class="form-col" data-reactid=".4.2.1.0.1.1"><label data-reactid=".4.2.1.0.1.1.0"><span data-reactid=".4.2.1.0.1.1.0.0">Address</span><input type="text" class="type-text" data-reactid=".4.2.1.0.1.1.0.1"></label><label data-reactid=".4.2.1.0.1.1.1"><span data-reactid=".4.2.1.0.1.1.1.0">Town / City</span><input type="text" class="type-text" data-reactid=".4.2.1.0.1.1.1.1"></label><label data-reactid=".4.2.1.0.1.1.2"><span data-reactid=".4.2.1.0.1.1.2.0">Postcode</span><input type="text" class="type-text" data-reactid=".4.2.1.0.1.1.2.1"></label><div class="button-row" data-reactid=".4.2.1.0.1.1.3"><a href="#" data-reactid=".4.2.1.0.1.1.3.0">Change password</a><input type="submit" class="primary-drock-btn" value="Save" data-reactid=".4.2.1.0.1.1.3.1"></div></div></div></form></div></li></ul></div>					
+				</div><!--mobile-view-dom-->
+				
+				
 			</div><!--//dashboard-applications-container-->			
 		</div>        
-	</div> <!-- //bodyContainer-->  
+	</div>
 	
 	<footer class="footer">
 		<div class="container">
