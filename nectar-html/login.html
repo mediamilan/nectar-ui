@@ -41,19 +41,30 @@
 			<div class="container">
 				<div class="loginForm">
 					<div class="title-row">
-						<h2 class="big-title">Nectar account login</h2>
-						<h5 class="small-title">Please log in so we can help fill in your application.</h5>
+						<h2 class="big-title">Account Login</h2>						
 					</div>
 					
-					<form>
-						<label><input type="email" class="type-text" placeholder="Email address"/></label>
-						<label><input type="text" class="type-text" placeholder="Password"/></label>						
-						<div class="button-row">
-							<a class="forgotten" href="#" title="">Forgotten account?</a>
-							<input type="submit fr" class="primary-drock-btn" value="Login" />
-							<div class="login-fb"><a href="#" title="Facebook login"><i class="fa fa-facebook" aria-hidden="true"></i>Or log in with Facebook</a></div>
+					<div class="flex-row">
+						<div id="loginForm" class="flex-col-6">
+							<form>
+								<label><input type="email" class="type-text" placeholder="Email address"/></label>
+								<label><input type="text" class="type-text" placeholder="Password"/></label>						
+								<div class="button-row">
+									<a class="forgotten" href="#" title="">Forgotten account?</a>
+									<input type="submit fr" class="primary-drock-btn" value="Login" />							
+								</div>
+							</form>			
+						</div>	
+						<div id="sociallogin" class="flex-col-6">
+							<ul class="social-login">
+								<li><a href="" class="facebook-btn" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign in with Facebook</span></a></li>
+								<li><a href="" class="twitter-btn" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i><span>Sign in with Twitter</span></a></li>
+								<li><a href="" class="google-btn" title="Google"><i class="fa fa-google-plus" aria-hidden="true"></i><span>Sign in with Google</span></a></li>
+								<li><a href="" class="linkedIn-btn" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i><span>Sign in with LinkedIn</span></a></li>
+							</ul>			
 						</div>
-					</form>
+					</div>					
+					
 				</div>
 			</div>
 		</div><!--//login-Container-->
