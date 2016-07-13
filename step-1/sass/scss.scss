@@ -1,0 +1,192 @@
+$body-color: #ffffff;
+$text-color:#002a42;
+$hover-color:#006a77;
+$listtype:none;
+$nonepad:0;
+$font-size:18px;
+$align-center:center;
+@mixin transition($all) {
+  -webkit-transition: $all;
+    -moz-transition: $all;     
+		transition: $all;
+}
+$big-title:60px;
+$md-title-size:36px;
+$topnav-size:24px;
+$bg-trans:transparent;
+$input-bg:#ffffff;
+$input-border-color:transparent;
+$input-focus-color:transparent;
+$input-padding:14px 20px;
+$input-text-size:12px;
+/******** BUTTONS **********/
+$primary-bg:#00a9ab;
+$primary-radius:30px;
+$primary-color:#ffffff;
+$primary-padding:10px 40px 8px;
+$primary-textcase:capitalize;
+$primary-textAlin:center;
+$primary-textsize:24px;
+$primary-hoverBg:#006a77;
+$primary-hovercolor:#ffffff;
+$primary-border:none;
+
+$primary-drockbg:#00a9ab;
+$primary-drockpadding:12px 40px 10px;
+$primary-drockhoverBg:#00a9ab;
+
+$secondary-bg:#ffffff;
+$secondary-radius:20px;
+$secondary-color:#00a9ab;
+$secondary-padding:12px 30px 10px;
+$secondary-textcase:capitalize;
+$secondary-textAlin:center;
+$secondary-textsize:24px;
+$secondary-hoverBg:#00a9ab;
+$secondary-hovercolor:#ffffff;
+$secondary-border:2px solid #00a9ab;
+
+$outline-btn-bg:transparent;
+$outline-btn-radius:30px;
+$outline-btn-color:#00a9ab;
+$outline-btn-padding:12px 40px 10px;
+$outline-btn-textcase:capitalize;
+$outline-btn-textAlin:center;
+$outline-btn-textsize:24px;
+$outline-btn-hoverBg:#00a9ab;
+$outline-btn-hovercolor:#ffffff;
+$outline-btn-border:2px solid #00a9ab;
+
+$primary-bgcolor:#cccccc;
+$primary-bgcolorhover:#00a9ab;
+$primary-bgtext:#ffffff;
+
+$table-bg:#e8e8e8;
+$footer-bg:#002a42;
+$copyright-bg:#002438;
+
+/******* END RESET*******/
+
+/******* START HEADER NAV **********/
+$header-bg:transparent;
+$logo-img:url(../images/nectar-logo.png) no-repeat center center / 100%;
+/******* END HEADER NAV **********/
+/*******Sass *********/
+body {
+	background:$body-color;	
+	color:$text-color;
+}
+h1, h2, h3, h4, h5, h6 {	
+	margin:0;
+	color:$text-color;	
+}
+ul{
+	list-style-type:$listtype;
+	padding:$nonepad;
+}
+
+.fl { float: left; }
+.fr { float: right; }
+.clrfix, .clear{ clear: both; }
+a, input{ @include transition(all 0.4s);}
+figure img { width: 100%;height:auto;}
+header, fotter{display:block;width:100%;}
+form, input{margin:0;}
+/****************** END PAGE RESET ******************/
+/****************** START HOME PAGE ******************/
+/*** START HEADER ****/
+.nectar-logo a{
+	background:$logo-img;
+	width:227px;
+	height:81px;
+	display:block;
+	text-indent:-99999px;
+}
+.primary-btn{
+	background:$primary-bg;
+	border-radius:$primary-radius;
+	color:$primary-color;
+	padding:$primary-padding;
+	text-transform:$primary-textcase;
+	text-align:$primary-textAlin;
+	font-size:$primary-textsize;
+	border:$primary-border;
+}
+.outline-btn{
+	background:$outline-btn-bg;
+	border-radius:$outline-btn-radius;
+	color:$outline-btn-color;
+	padding:$outline-btn-padding;
+	text-transform:$outline-btn-textcase;
+	text-align:$outline-btn-textAlin;
+	font-size:$outline-btn-textsize;
+	border:$outline-btn-border;
+}
+
+
+.outline-btn:hover, .outline-btn:focus{
+	background:$outline-btn-hoverBg;
+	color:$outline-btn-hovercolor;
+}
+.primary-btn:hover, .primary-btn:focus{
+	background:$primary-hoverBg;
+	color:$primary-hovercolor;
+}
+.primary-drock-btn{
+	background:$primary-drockbg;
+	border-radius:$primary-radius;
+	color:$primary-color;
+	padding:$primary-drockpadding;
+	text-transform:$primary-textcase;
+	text-align:$primary-textAlin;
+	font-size:$primary-textsize;
+	border:$primary-border;	
+	cursor: pointer;
+}
+.primary-drock-btn:hover, .primary-drock-btn:focus{
+	background:$primary-drockbg;
+	color:$primary-color;
+}
+.secondary-btn{
+	background:$secondary-bg;
+	border-radius:$secondary-radius;
+	color:$secondary-color;
+	padding:$secondary-padding;
+	text-transform:$secondary-textcase;
+	text-align:$secondary-textAlin;
+	font-size:$secondary-textsize;
+	border:$secondary-border;	
+	cursor: pointer;	
+}
+.secondary-btn:hover, .secondary-btn:focus{
+	background:$secondary-bg;
+	color:$secondary-color;
+}
+.big-title{font-size:$big-title;}
+.md-title{font-size:$md-title-size;}
+
+.primary-bgcolor .tab-nav ul li a{
+	background:$primary-bgcolor;
+	color:$primary-bgtext;
+}
+.primary-bgcolor .tab-nav ul li a:hover, .primary-bgcolor .tab-nav ul li a.selected{
+	background:$primary-bgcolorhover;
+	color:$primary-bgtext;
+}
+.primary-bgcolor .tab-pane-head{
+	background:$primary-bgcolorhover;
+	color:$primary-bgtext;
+}
+.primary-bgcolor .loan-status{
+	background:$primary-bgcolorhover;
+	color:$primary-bgtext;
+}
+table.table th, table.table td{
+	background:$table-bg;
+}
+.primary-bgcolor .form-tag{
+	background:$primary-bgcolorhover;
+}
+
+footer{background:$footer-bg;}
+.copyright-bar{background:$copyright-bg;}
