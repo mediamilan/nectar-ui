@@ -2,9 +2,9 @@
 
 /***** APPLICATION STEP 1 FORM *****/
 var applistep1Form = React.createClass({
-  render: function(){
+  render: function(){	  
     return (		
-		<form>		
+		<form>				
 			<div className="form-row">
 				<input type="checkbox" className="type-checkbox" name="borrow" value="borrow"/> Show me how much I can borrow
 			</div>

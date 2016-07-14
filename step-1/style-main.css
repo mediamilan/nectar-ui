@@ -54,6 +54,13 @@ Author URI:
 	font-weight: 300;
 	font-style: normal;
 }
+@font-face {
+    font-family: 'museolight';
+    src: url('fonts/museosanscyrl-webfont.woff2') format('woff2'),
+         url('fonts/museosanscyrl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /**** END FONTS ****/
 html, body, div, span, applet, object, iframe,
@@ -97,7 +104,7 @@ q:before, q:after {
 }
 body{
 	margin:0;
-	font-family:BreeLt,arial,sans-serif;
+	font-family:BreeLt,arial,sans-serif;	
 }
 table {
 	border-collapse: collapse;
@@ -114,6 +121,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-family:BreeLt,arial,sans-serif;	
 	font-weight:normal;	
 }
+h2{font-size:30px;line-height: 1.3;}
+h3{font-size:24px; line-height: 1.3;}
+h4{font-size:18px; line-height: 1.3;}
+h5{font-size:16px; line-height: 1.3;}
+h6{font-size:14px; line-height: 1.3;}
+
 ul{list-style-type:none;padding: 0;}
 
 .fl { float: left; }
@@ -550,13 +563,13 @@ input.radio-input {
     right: -45px;
     top: -9px;
 }
-label.disabled-field.date-picker {
-    background: url(images/calendar-icon-disabled.png) no-repeat;
+label.date-picker {
+    background: #ffffff url(images/calendar-icon.png) no-repeat;
     background-position: 97% center;
 }
 
-label.date-picker {
-    background: url(images/calendar-icon.png) no-repeat;
+label.disabled-field.date-picker{
+    background: #ffffff url(images/calendar-icon-disabled.png) no-repeat;
     background-position: 97% center;
 }
 /****************** END FOOTER ******************/
@@ -656,7 +669,7 @@ label.date-picker {
 	position:relative;
 	background:#00a9ab;
 	padding:40px 15px;
-	margin:20px 0 50px;
+	margin:20px 0 100px;
 }
 .loginForm {
     width: 100%;
@@ -722,35 +735,30 @@ label.date-picker {
 .loginForm .flex-col-6:nth-child(2){ padding-left: 25px; border-left:1px solid rgba(255,255,255,0.3);}
 
 .social-login li a {
-    display: block;    
-    border-radius: 5px;
+    display: block;
+    border-radius: 30px;
     color: #ffffff;
-    font: 22px arial,sans-serif;
+    font: 22px/1.3 BreeLt,arial,sans-serif;
 }
 .social-login li a i.fa {
     display: inline-block;
     vertical-align: middle;
-    height: 60px;
-    width: 65px;
+    height: 52px;
+    width: 52px;
     text-align: center;
-    font-size: 38px;    
-    line-height: 1.6;
+    font-size: 30px;
+    line-height: 1.8;
 }
 .social-login li a span {
     display: inline-block;
     vertical-align: middle;
-    padding: 5px 15px;
+    padding:18px 15px 12px;
 }
 .social-login li{display:block;margin-bottom:20px;}
 a.facebook-btn { background: #3b5998; border: 1px solid #2d4e7f;}
 a.twitter-btn {  background: #2ba9e1; border: 1px solid #208bb5;}
 a.google-btn { background: #dd4b39; border: 1px solid #a84437;}
 a.linkedIn-btn { background: #007bb6; border: 1px solid #006996;}
-
-a.facebook-btn i.fa {border-right: 1px solid #2d4e7f;}
-a.twitter-btn i.fa {border-right: 1px solid #208bb5;}
-a.google-btn i.fa {border-right: 1px solid #a84437;}
-a.linkedIn-btn i.fa {border-right: 1px solid #006996;}
 
 .login-fb a {
     font-size: 24px;
@@ -799,8 +807,8 @@ a.linkedIn-btn i.fa {border-right: 1px solid #006996;}
 .modal-content {
     margin: 0 auto;
     width:80%;
-    max-width: 850px;
-    padding: 30px;
+    max-width:960px;
+    padding:40px 30px 30px;
     background: #ffffff;
 }
 h2.modal-title {
@@ -825,6 +833,7 @@ h2.modal-title {
 .loginForm a.forgotten {
     display: inline-block;
 }
+
 /******************************/
 	/* END LOGIN-CONTAINER
 /******************************/
@@ -1171,6 +1180,141 @@ label.disabled-field input.type-text {
 .selectTag_list .select-tag:nth-child(2) {
     margin: 0 15px;
 }
+.application-form h2 {
+    font-size: 22px;
+    margin: 40px 0;
+    line-height: 1.3;
+}
+.application-form a {color: #00a9ab;}
+.content-area a {color: #00a9ab;}
+.content-area h2.big-title {
+    text-align: left;
+    margin-bottom: 40px;	
+}
+.content-area h3{
+	font-family:museolight,arial,sans-serif;
+}
+
+.cc-notification h3{font-family:museolight,arial,sans-serif;}
+.cc-notification strong{font-family:museothin,arial,sans-serif;}
+.content-area {
+    margin-bottom: 30px;
+}
+.notification{margin-top:40px;}
+.checkboxField {
+    font-family: museolight,arial,sans-serif;
+	text-align: left;
+	line-height: 1.2;
+}
+.checkboxField span {
+    width: 90%;
+}
+.checkboxField a{margin-left:10px;}
+.cc-notification {
+    background: #00a9ab;
+    margin-bottom: 20px;
+    color: #ffffff;
+    padding: 25px 20px;
+	font-family:museolight,arial,sans-serif;
+}
+.cc-notification h3{color:#ffffff;}
+.application-form .cc-notification {
+    margin:0 0 25px 0;
+    max-width: 100%;
+}
+.application-form .cc-notification  label {
+    width: 42%;
+    float: left;
+	margin-right:5%;
+	border: none;
+}
+.application-form .cc-notification .select-tag .select-box {border: none;}
+.application-form .cc-notification .select-tag {
+    width: 42%;
+    float: left;	
+}
+.application-form .cc-notification h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 22px;
+}
+.cc-notification .form-row {
+    margin: 30px 0 0;
+}
+.application-form form .cc-notification:last-child{
+	margin-bottom:40px;
+}
+.notification .form-row.butonRow {
+    margin: 60px 0 0 0;
+}
+.notification .application-form {
+    margin: 0;
+    max-width: 680px;
+}
+.application-form-container .content-area {
+    max-width: 680px;
+}
+.confirm-email {
+    max-width: 450px;
+    margin: 0 auto 50px;
+}
+.modal-popup-form.application-form {
+    margin: 40px auto 0;
+    max-width:90%;
+}
+.flex-row.confirm-password { margin: 0 auto;}
+.fr{float:right;}
+.password-strength{position:relative;text-align: left;}
+.confirm-password .flex-col-6:last-child {
+    padding-left: 20px;
+    border-left: 1px solid #e8e8e8;
+    margin-left: 20px;
+}
+.password-strength .lbl {
+    display: inline-block;
+    vertical-align: middle;
+}
+.password-strength .tooltip {
+    position: relative;
+    right: 0;
+    left: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+	top: 0;
+}
+.password-strength>span {
+    margin-bottom: 10px;
+    display: block;
+}
+.checkboxField.text-align-center {
+    text-align: center;
+    margin-top: 20px;
+}
+.flex-row.confirm-password .flex-col-6:first-child {
+    max-width: 340px;
+}
+.passwordField__info {
+    position: absolute;
+    width: 100%;
+    top: -35px;
+    left: 0;
+}
+.application-form form h3.password-strength {
+    width: 100%;
+    margin-top: 50px;
+}
+.application-form form h3.password-strength label#password-strength {
+    width: auto;
+    display: block;
+}
+span.passwordField__meter {
+    border-radius: 16px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.marginTop{margin-top:30px;}
+
 /******************************/
 	/* END APPLI-CONTAINER
 /******************************/
@@ -1184,7 +1328,9 @@ label.disabled-field input.type-text {
 
 label input.type-text {
     margin-top: 4px;
+	background:transparent;
 }
+
 /**** START @media ***/
 #showOnDeskTop{display:block;}
 .mobile-view-dom{display:none;}
