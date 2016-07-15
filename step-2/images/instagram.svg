@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #002a42;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="instagram.svg">
+    <circle class="cls-1" cx="36" cy="36" r="25"/>
+    <image id="Vector_Smart_Object" data-name="Vector Smart Object" x="24" y="24" width="25" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAbFBMVEUAAAAAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAKkIAAAAlHRe3AAAAInRSTlMAA2vU/az+8ODh5KtJKvdncBD7qEVYJ0dGqadjIO4+hd8P8TqunwAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAADPSURBVCjPldLbFkMwEAXQQxS9ulcpDef/P7JD0kuoh56nJHvFjJUBPF8FdBMo3wO8HX9l58FfnoWRhPShlhJDElFhWYN7IwFWFSIj/EfC+DB18C3H0/l0/GxFLtJlSCbTV5CYti+zpECWs4BJwTwD0peUZGnFLN9SkVcrV7Jy79RWbu4dqdNYad06sud9hjvZ4lu6nmzqc92QfecIHr39wf4BV9C1uZznbYelSBtlVWZ2PUlAjXW0vI/iMK5gHORNZQ4GnbrRwzQH27OzOW9PVX8wWbnEmRAAAAAASUVORK5CYII="/>
+  </g>
+</svg>
