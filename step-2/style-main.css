@@ -1421,10 +1421,17 @@ label input.type-text {
     margin-top: 4px;
 	background:transparent;
 }
-
+.bank-history-container .radio-box span {
+    word-wrap: break-word;
+    display: inline-block;
+    width: 90%;
+}
 /**** START @media ***/
 #showOnDeskTop{display:block;}
+.showOnlyDesktop{display:block;}
+
 .mobile-view-dom{display:none;}
+.jcarouselWrapper{display:none;}
 
 @media (max-width:1100px){
 	.terms-section:before {top: -20px;}
@@ -1432,6 +1439,56 @@ label input.type-text {
 }
 
 @media (max-width:1000px){	
+	.jcarousel-pagination {
+		text-align: center;
+		position: relative;
+		margin: 20px auto 0;
+	}
+	.jcarousel-pagination a {
+		display: inline-block;
+		width: 21px;
+		height: 21px;
+		border: 3px solid #4E443C;
+		padding: 0;
+		border-radius: 100%;
+		background: transparent;
+		text-indent: -999999px;
+		position:relative;
+		margin:0 7px;
+	}
+	.jcarousel-pagination a.active {background:transparent;}
+	.jcarousel-pagination a.active:before {
+		width: 15px;
+		height: 15px;
+		border-radius: 100%;
+		background: #4E443C;
+		content: '';
+		position: absolute;
+		top: 3px;
+		left: 3px;
+	}
+	
+	.terms-box{width:auto;}
+	.container.jcarousel-wrapper {
+		border: none;
+		box-shadow: none;
+		border-radius: 0;
+		height: 300px;
+	}
+	.jcarousel li {		
+		max-width: 700px;
+		width: 100%;
+	}
+	.showOnlyDesktop{display:none;}
+	.jcarouselWrapper{display:block;}
+	
+	.confirm-password .flex-col-6:last-child {
+		padding: 20px 0 0 0;
+		border-left: none;
+		margin: 20px 0 0 0;
+		border-top: 1px solid #e8e8e8;
+	}
+	.application-form form h3.password-strength{margin-top: 50px;}
 	.terms-section:before {top: -15px;}
 	.terms-section:after {top: -15px;}
 	.flex-col {
@@ -1441,7 +1498,7 @@ label input.type-text {
 		flex: 1 0 50%;
 		margin-bottom:20px;
 	}
-	.social-login li a{font-size:20px;}
+	.flex-row.confirm-password .flex-col-6:first-child {  max-width: 100%;}
 	.social-login li a i.fa {    
 		height: 55px;
 		width: 55px;    
@@ -1449,7 +1506,6 @@ label input.type-text {
 		font-size: 30px;
 	}
 	.loginForm a.forgotten {  margin-bottom: 20px;}
-	.social-login li a span{    padding: 5px 10px;}
 	#showOnDeskTop{display:none;}
 	.mobile-view-dom{display:block;}
 	.nav-bar-right{display:none;}	
@@ -1506,8 +1562,7 @@ label input.type-text {
 		margin-bottom: 40px;
 	}
 	.footer .flex-row { padding: 50px 0;}
-	.container { width: 96%;  padding: 0 2%;	}
-	.form-row label{padding: 10px 18px;}
+	.container { width: 96%;  padding: 0 2%;	}	
 	.form-tag form { padding: 30px 16px;}
 	.verified svg { width: 30px;}
 	.verified{    font-size: 14px;}
@@ -1534,19 +1589,45 @@ label input.type-text {
 		bottom: -13px;		
 		transform: rotate(2deg);
 	}
+	
+	#modal-signup{
+		position:absolute;
+		top: 0;
+		left: 0;
+		-webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+	}
+	.modal-popup {  min-height: 100vh;}
+	.modal-content{width:100%;    min-height: 100%;}
+	.modal-title { text-align: left; line-height: 1.1;}
+	.modal-popup-form.application-form{max-width: 100%;}
+	.confirm-email { max-width: 100%;  margin: 0 auto 30px;}
+	.appli-step-nav>ul { text-align: center;}
+	.appli-step-nav li{width:32%;text-align:left;}
+	.step-icon {width: 35px;height: 35px;}
+	.appli-step-nav { margin-bottom:30px;}
+	.application-form-container .big-title{text-align:left;}
+	.application-form { max-width: 99%;}
+	#login-msg .modal-content{min-height:50%;}
+	#login-msg h2.modal-title {  text-align: center;}
+	.datePicker .selectTag_list .select-tag{min-width: 80px;}
+	.form-row.tooltip-sms { max-width: 93%;}
+	.uploadForm .form-row { width: 93%;}
+	.application-form-container { margin-bottom: 20px;}
 }
 @media (max-width:760px){
+	.select-tag .select-box.required{background-position: 95% center;}
 	.flex-col {
 		-webkit-box-flex: 1;
 		-webkit-flex: 1 0 100%;
 		-ms-flex: 1 0 100%;
 		flex: 1 0 100%;		
 	}
+	
 	.appli-step-nav {text-align: left;}
-	.appli-step-nav li {
-		margin: 0 0 20px 0;
-		width: 100%;
-	}
+	.appli-step-nav li {margin: 0 0 20px 0;}
 	.login-section:before { transform: rotate(-5deg);}
 	.flex-col-6{
 		-webkit-box-flex:1;
@@ -1558,20 +1639,21 @@ label input.type-text {
 	.loginForm .flex-col-6:nth-child(2) {
 		padding-left: 0;
 		border-left:none;
-	}
-	.application-form .select-tag select {
-		font-size: 18px;
-		padding: 5px 15px 0;
-		width: 100%;
-	}
+	}	
 	.form-row.center-align a.outline-btn{margin-right: 16px;}
-	.outline-btn, .primary-drock-btn {
-		min-width: 90px;
-		padding: 10px 25px 9px;
-		font-size: 18px !important;
+	.application-form .cc-notification label { width: 100%; margin-right: 0; border: none;float: none;}
+	.application-form .cc-notification .select-tag { width: 100%;  float: none;}
+	#referForm input.primary-drock-btn {  margin: 0 auto;}
+	.bank-history-container .flex-col {
+		-webkit-box-flex: 1;
+    -webkit-flex: 1 0 97%;
+        -ms-flex: 1 0 97%;
+            flex: 1 0 97%;
 	}
+	
 }	
-@media (max-width:600px){	
+@media (max-width:600px){
+	
 	.big-title {  font-size: 40px;}
 	.loginForm .big-title, .loginForm .title-row {  margin-bottom: 35px;}
 	h5.small-title {  font-size:18px;}
@@ -1581,6 +1663,46 @@ label input.type-text {
 	.modal-bottom .btn {		
 		margin-right: 9px;
 		min-width: 49px;
-	}
+	}	
+	.terms-section:before { top: -13px;}
+	.terms-section:after {  top: -13px;}
+	.uploadForm .form-row.uploaded_list {  width: 100%;}
+	.uploaded_list ul {  min-width:85%;}
 	
+}
+@media (max-width:480px){
+	.bank-history-container .flex-col {
+		-webkit-box-flex: 1;
+    -webkit-flex: 1 0 92%;
+        -ms-flex: 1 0 92%;
+            flex: 1 0 92%;
+	}
+	.radio-box span {  word-wrap: break-word;  display: inline-block;  width: 90%;}
+	.uploadForm .form-row {  width: 87%;}
+	.uploaded_list ul {  min-width: 95%;}
+	span.field-lbl{    font-size: 17px;}
+	.form-row label{padding-left:20px;}
+	.uploadForm.application-form input.type-text {  font-size: 16px;}
+	.form-row.tooltip-sms {  max-width: 88%;}
+	.datePicker .selectTag_list .select-tag {  min-width:100px;}
+	.terms-section:before { top: -8px;}
+	.terms-section:after {  top: -8px;}
+	.appli-step-nav li { text-align: center;}
+	.step-icon {
+		width: 30px;
+		height: 30px;
+		border-width: 6px;
+		display:block;
+		margin:0 auto 5px;
+	}
+	h2.modal-title { font-size: 45px;  margin-bottom: 15px;}
+	.modal-content { padding: 20px;}
+	.application-form form h3.password-strength { margin-top: 30px;}
+	.outline-btn, .primary-drock-btn {
+		min-width: 90px;
+		padding: 10px 25px 9px;
+		font-size: 18px !important;
+	}
+	input.type-text{font-size: 20px;}
+	.application-form .select-tag select {font-size: 20px;}
 }

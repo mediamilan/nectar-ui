@@ -70,7 +70,7 @@ var applistep3Form = React.createClass({
 				</div>
 			</div>
 			
-			<div className="form-row">
+			<div className="form-row tooltip-sms">
 				<label className="required-field">									
 					<input type="text" className="type-text" placeholder="Number of dependents" required/>
 				</label>

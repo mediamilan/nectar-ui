@@ -45,7 +45,7 @@ var apstepExis2Form = React.createClass({
 					 </div>																			
 				</div>
 			</div>
-			<div className="form-row">
+			<div className="form-row tooltip-sms">
 				<div className="select-tag">										
 					<div className="select-box required">
 					   <select>

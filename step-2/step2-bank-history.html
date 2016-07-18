@@ -10,6 +10,7 @@
     <!-- CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+	<link href="css/jcarousel.basic.css" rel="stylesheet">
 	<link href="style-main.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -84,7 +85,7 @@
 			</div>
 		</div>
 		
-		<div class="terms-section">
+		<div class="terms-section showOnlyDesktop">
 			<div class="container">
 				<div class="flex-row">
 					<div class="flex-col">
@@ -111,6 +112,43 @@
 				</div>
 			</div><!--container-->
 		</div><!--terms-section-->
+		
+		<div class="jcarouselWrapper">
+			<div class="terms-section">
+				<div class="container jcarousel-wrapper">
+					<div class="jcarousel">
+						<ul>
+							<li>
+								<div class="terms-box">
+									<a href="#" title="" class="terms_icon"><img src="images/Icon_safe.svg" alt="Safe"></a>
+									<h2>Safe</h2>
+									<p>Your banking credentials are encrypted and deleted after use. Your personal information is secure.</p>
+								</div>
+							</li>
+							<li>
+								<div class="terms-box">
+									<a href="#" title="" class="terms_icon"><img src="images/Icon_quick.svg" alt="Safe & Secure"></a>
+									<h2>Fast</h2>
+									<p>The process takes 2-5 minutes.</p>
+								</div>
+							</li>
+							<li>
+								<div class="terms-box">
+									<a href="#" title="" class="terms_icon"><img src="images/Icon_trusted.svg" alt="Safe & Secure"></a>
+									<h2>Trusted</h2>
+									<p>Credit Sense is a trusted credit reporting body and leading bank data provider in Australasia.</p>
+								</div>
+							</li>					
+						</ul>
+					</div>
+					<p class="jcarousel-pagination">
+                    
+					</p>
+				</div><!--container-->
+				
+			</div><!--terms-section-->
+		</div>
+		
 	</div> <!-- //bodyContainer--> 	
 		
 	<footer class="footer">
@@ -162,6 +200,8 @@
       <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>	
 
+    <script src="js/jquery.jcarousel.min.js"></script>
+    <script src="js/jcarousel.basic.js"></script>
     <script src="js/site.js"></script>
   </body>  
 </html>
