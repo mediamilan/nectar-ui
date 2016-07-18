@@ -11,13 +11,13 @@ var bankhistory = React.createClass({
 							<h2 className="big-title">Verifiy your income and expenses</h2>
 							<p>To simplify this process we use Credit Sense using their secure bank grade technology. </p>
 							<p>After you have read the terms start by selecting your bank account. You will be able to review your offer before finalising your application. </p>
-						</div>
+							</div>
 						<form>
 							<div className="form-row radio-box">
-								<input type="radio" className="radio-input" name="bankhistorymanually" value="bank history manually"/> <span>I'm not in a hurry and would rather send my bank history manually.</span>
+								<input type="radio" className="radio-input" name="bankhistorymanually" value="bank history manually"/><span>I'm not in a hurry and would rather send my bank history manually.</span>
 							</div>
 							<div className="form-row radio-box">
-								<input type="radio" className="radio-input" name="notlisted" value="not listed"/> <span>My bank is not listed.</span>
+								<input type="radio" className="radio-input" name="notlisted" value="not listed"/><span>My bank is not listed.</span>
 							</div>
 						</form>								
 					</div>
