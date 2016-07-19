@@ -328,9 +328,7 @@ table.table th, table.table td{
 .select-tag .select-box{
   width: 100%;  
   background:#ffffff url('images/select-arrow.png') no-repeat;
-  background-position:97% center;
-  min-height: 30px;
-  padding:5px 6px 6px 9px;  
+  background-position:97% center;   
   border-radius: 8px; 
   overflow: hidden;
 }
@@ -344,12 +342,17 @@ label.required-field:before{
 	position:absolute;
 	content:'';
 	right: 22px;
-    top: 20px;
+    top: 27px;
 	border:2px solid #ff9900;
 	width:10px;
 	height:10px;
-	border-radius:100px;
-	
+	border-radius:100px;	
+}
+.error, .fl-error-msg {
+    width: 100%;
+    margin-top: 10px;
+    color: red;
+	font: 18px Museothin,sans-serif;
 }
 .application-form .select-tag .select-box.disabled {
     border-color: #e8e8e8;
@@ -364,23 +367,106 @@ label.required-field:before{
 
 select:focus{outline:none;}
 .select-tag .select-box select{
-  background: transparent;
-  line-height: 1;
+  background: transparent;  
   border: 0;
-  padding: 5px 0 0 0;
-  border-radius: 0;
-  width: 110%;
+  padding:17px 25px 17px;
+  border-radius: 0;  
   position: relative;
   z-index: 10;
-  font-size: 18px;
-  color:#00a9ab;  
+  font: 22px Museothin,sans-serif;
+  color:#00a9ab; 
+  height:67px;
+  line-height: 35px;
+}
+label.radio-input {
+    border: none;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+	position:relative;
+	color: #002a42;
+    font-size: 18px;
+	padding-left: 30px;
+}
+
+.radio-box label.radio-input {
+    border: none;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+	position:relative;
+	color: #002a42;
+    font-size: 18px;
+	padding-left: 40px;
+}
+.radio-box label.radio-input:before{
+	content:'';
+	position:absolute;
+	top:-3px;
+	left:0;
+	border:2px solid #cccccc;
+	border-radius:100px;
+	width:21px;
+	height:21px;	
+}
+
+.radio-box input[type=radio]:checked ~ label.radio-input:before {
+  border-color:#002a42;
+}
+
+.radio-box input[type=radio]:checked ~ label.radio-input:after {
+	background: #002a42;
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 13px;
+    height: 13px;
+    border-radius: 100px;	
+}
+.radio-box.radio_disabled label.radio-input{color:#cccccc;}
+.radio-box.radio_disabled label.radio-input:before{border-color:#e8e8e8;}
+
+.checkbox-field input[type="checkbox"] {
+    display:none;
+}
+.checkbox-field input[type="checkbox"] + label {
+    display:inline-block;
+    vertical-align:middle;   
+    cursor:pointer;
+	border: none;
+    padding: 0 0 0 40px;
+    background: none;
+    border-radius: 0;
+	position:relative;
+	color: #002a42;
+    font-size: 18px;	
+}
+
+.checkbox-field input[type="checkbox"] + label:before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:20px;
+	height:20px;
+	border:2px solid #cccccc;
+}
+
+.checkbox-field input[type="checkbox"]:checked + label:before{	
+	border-color:#002a42;
+	background:url(images/checked.png) no-repeat left center;
+}
+.radio-box input{
+  position: absolute;
+  visibility: hidden;
 }
 .form-tag form{
 	padding:50px 30px;
 }
 .form-row {
 	position:relative;
-    margin-bottom: 5px;
+    margin-bottom:20px;
 	overflow:hidden;
 	display: -webkit-box;
   display: -webkit-flex;
@@ -400,7 +486,7 @@ select:focus{outline:none;}
 .form-row label {
     display: block;
     background: #ffffff;
-    margin-bottom: 15px;
+    margin: 0;
     border-radius: 8px;
     padding:17px 25px 17px;
     color: #999999;    
@@ -414,10 +500,10 @@ select:focus{outline:none;}
 }
 input.type-text {
     display: block;
-    width: 100%;
+    width:97%;
     padding: 0;
     border: none;
-    font-size: 23px;
+    font:22px Museothin,sans-serif;
     color: #00a9ab;
 }
 input.type-text:focus{outline:none;}
@@ -446,7 +532,8 @@ input.type-text:focus{outline:none;}
     top: 17px;
     width: 35px;
     height: 32px;
-    background: url(images/calendar-con.png) no-repeat left top;
+    background:#ffffff url(images/calendar-con.png) no-repeat left top;
+	z-index:5;
 }
 
 .button-row a {
@@ -668,6 +755,19 @@ label.disabled-field.date-picker{
 /******************************/
 	/* START LOGIN-CONTAINER
 /******************************/
+.form-col .inputField { 
+	margin-bottom: 20px;
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form-tag .fl-input-container {
+    border: none;
+}
+.dashboard-applications-container {
+    margin-bottom: 50px;
+}
 .flex-col-6{
 	-webkit-box-flex:1;
   -webkit-flex:1;
@@ -993,7 +1093,6 @@ input.type-checkbox {
     border: 2px solid #cccccc;
     width: 100%;
 }
-.application-form form  input.type-text{font-size:20px}
 
 a.terms_icon {
     width: 72px;
@@ -1064,25 +1163,19 @@ a.terms_icon {
 .application-form .select-tag {width: 100%;margin-bottom:15px;}
 .application-form .select-tag .select-box{
 	border: 2px solid #cccccc;
-    width:99%;
-	padding:15px 0;
+    width:99%;	
 	margin:0 auto;
 	
 }
-.application-form .select-tag select {
-	font-size: 22px;	
-	padding:5px 25px 0;
-	width:100%;
-}
-.select-box select{
-		padding-top:5px;
-		border: 0 !important;  /*Removes border*/
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        text-overflow:'';
-        text-indent: 0.01px; /* Removes default arrow from firefox*/
-        text-overflow: "";  /*Removes default arrow from firefox*/
+
+.select-box select{		
+	border: 0 !important;  /*Removes border*/
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	text-overflow:'';
+	text-indent: 0.01px; /* Removes default arrow from firefox*/
+	text-overflow: "";  /*Removes default arrow from firefox*/
 }
 select::-ms-expand {display: none;}
 .submit_row {
@@ -1392,7 +1485,16 @@ a.close_icon {
     background-position: 97% center;
 	width: 100%;
 }
-.fl-input-container input{border:none !important;line-height:1;font:20px/1.3 Museothin, arial,sans-serif;color:#00a9ab;width: 97%;}
+.fl-input-container input{
+	border:none !important;
+	font:22px Museothin, arial,sans-serif;
+	color:#00a9ab;
+	width: 97%;
+	height:30px;
+	margin: 0;
+    position: relative;
+    top: 5px;
+}
 .fl-input-label{
 	opacity:1;
 	font:20px Museothin, arial,sans-serif;
@@ -1405,8 +1507,31 @@ a.close_icon {
     color: #999999;
     opacity: 1;
     transform: scale(0.7) translate3d(0, 5px, 0);
-	top:0;
+	top:5;
 }
+
+.fl-input-container.input_warning{border-color:red;background-image: url(images/close_icon.png);}
+
+label.required-field.input_warning:before{
+	background: #ffffff url(images/close_icon.png) no-repeat left center;
+	border:none;
+	width:18px;
+	height:18px;
+	border-radius:0;
+}
+
+.input_warning label{color:red !important;}
+.input_warning label input{color:red !important;}
+.input_warning.fl-input-container input{color:red;}
+
+form label.input_warning {border-color: red;}
+form label.input_warning input{color: red;}
+
+.input_warning ::-webkit-input-placeholder { color: red;}
+.input_warning :-moz-placeholder {color: red;}
+.input_warning ::-moz-placeholder {color: red; }
+.input_warning :-ms-input-placeholder {color: red;}
+
 /******************************/
 	/* END APPLI-CONTAINER
 /******************************/
@@ -1419,8 +1544,10 @@ a.close_icon {
 .tab-content.open-tab{display:block;}
 
 label input.type-text {
-    margin-top: 4px;
+    margin-top: 2px;
 	background:transparent;
+	height: 30px;
+	line-height:25px;
 }
 .bank-history-container .radio-box span {
     word-wrap: break-word;
@@ -1431,10 +1558,10 @@ label input.type-text {
     border: none;
     width: auto;
     position: absolute;
-    top: 0;
+    top:0;
     padding: 0;
     margin: 0;
-    font-size: 19px;
+    font-size: 21px;
 }
 /**** START @media ***/
 #showOnDeskTop{display:block;}
