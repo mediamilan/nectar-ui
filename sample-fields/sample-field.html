@@ -58,19 +58,33 @@
 											
 									</div>	
 									<!--//React Floating Label-->
+									<div class="form-row inputField">
+										<div class="fl-input-container input_warning">
+											<input autocomplete="false" class="fl-input" id="text-box" type="text">
+											<label class="fl-input-label" for="text-box">Error Field</label>
+											<span class="fl-input-bar"></span>
+											<span class="fl-error-msg">Full name can contain only the alphabets and space</span>
+										</div>
+									</div>
+									<!--//Warning input Field-->
 									
 									<div class="form-row tooltip-sms">									   
 										<label class="required-field">
 											<input type="text" name="Noofdependents" class="type-text" placeholder="Number of dependents" required="">
-										 </label>
+										 </label>										 										 
+									</div>
+									<!--//Tooltip, error with input Field-->
+									
+									<div class="form-row tooltip-sms">									   
+										<label class="required-field input_warning">
+											<input type="text" name="Noofdependents" class="type-text" placeholder="Error Field" required="">
+										 </label>	
 										 <div class="tooltip"> 									 
 											  <span class="tooltipIcon"> ? </span>
 											  <span class="tooltiptext">Tooltip text</span>
 										</div>
 										 <div class="error">Please enter valid number</div>
-									</div>
-									<!--//Tooltip, error with input Field-->
-									
+									</div>									
 									<div class="form-row">
 										<div class="select-tag">										
 											<div class="select-box required">
@@ -85,10 +99,40 @@
 											 </div>																			
 										</div>
 									</div>
-									
 									<!--//Select Field-->
 									
-									<div class="form-row butonRow">
+									<div class="form-row radio-box">										
+										<input type="radio" id="unselected" name="selector">
+										<label class="radio-input" for="unselected">Unselected</label>
+									</div>									
+									<div class="form-row radio-box">
+										<input type="radio" id="selected" name="selector" checked>
+										<label class="radio-input" for="selected">Selected</label>
+									</div>
+									
+									<div class="form-row radio-box radio_disabled">
+										<input type="radio" id="disabled" name="selector" disabled>
+										<label class="radio-input" for="disabled">disabled</label>
+									</div>
+									<!--//Radio Field-->
+									
+									<div class="form-row checkbox-field">
+										<input type="checkbox" id="c1" name="cc" />
+										<label for="c1">Unchecked</label>										
+									</div>
+									
+									<div class="form-row checkbox-field">
+										<input type="checkbox" id="checked" name="cc" checked />
+										<label for="checked">Checked</label>										
+									</div>
+									
+									<div class="form-row checkbox-field checkbox-disabled">
+										<input type="checkbox" id="disabled" name="cc" disabled/>
+										<label for="disabled">Disabled</label>										
+									</div>
+									<!--//checkbox Field-->
+									
+									<div class="form-row butonRow">										
 										<input type="submit" class="primary-drock-btn" value="Go to dashboard">
 									</div>										
 								</form>
@@ -143,8 +187,7 @@
 				</div>
 			</div>
 		</div>
-	</footer><!-- //footer--> 
-   	
+	</footer><!-- //footer--> 	
 	 	
 	<script src="js/bundle.js"></script>	
 	<script src="js/jquery-1.12.4.min.js"></script>

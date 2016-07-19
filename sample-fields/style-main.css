@@ -352,6 +352,7 @@ label.required-field:before{
     width: 100%;
     margin-top: 10px;
     color: red;
+	font: 18px Museothin,sans-serif;
 }
 .application-form .select-tag .select-box.disabled {
     border-color: #e8e8e8;
@@ -372,12 +373,94 @@ select:focus{outline:none;}
   border-radius: 0;  
   position: relative;
   z-index: 10;
-  font-size: 22px;
+  font: 22px Museothin,sans-serif;
   color:#00a9ab; 
   height:67px;
   line-height: 35px;
 }
+label.radio-input {
+    border: none;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+	position:relative;
+	color: #002a42;
+    font-size: 18px;
+	padding-left: 30px;
+}
 
+.radio-box label.radio-input {
+    border: none;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+	position:relative;
+	color: #002a42;
+    font-size: 18px;
+	padding-left: 40px;
+}
+.radio-box label.radio-input:before{
+	content:'';
+	position:absolute;
+	top:-3px;
+	left:0;
+	border:2px solid #cccccc;
+	border-radius:100px;
+	width:21px;
+	height:21px;	
+}
+
+.radio-box input[type=radio]:checked ~ label.radio-input:before {
+  border-color:#002a42;
+}
+
+.radio-box input[type=radio]:checked ~ label.radio-input:after {
+	background: #002a42;
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 13px;
+    height: 13px;
+    border-radius: 100px;	
+}
+.radio-box.radio_disabled label.radio-input{color:#cccccc;}
+.radio-box.radio_disabled label.radio-input:before{border-color:#e8e8e8;}
+
+.checkbox-field input[type="checkbox"] {
+    display:none;
+}
+.checkbox-field input[type="checkbox"] + label {
+    display:inline-block;
+    vertical-align:middle;   
+    cursor:pointer;
+	border: none;
+    padding: 0 0 0 40px;
+    background: none;
+    border-radius: 0;
+	position:relative;
+	color: #002a42;
+    font-size: 18px;	
+}
+
+.checkbox-field input[type="checkbox"] + label:before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:20px;
+	height:20px;
+	border:2px solid #cccccc;
+}
+
+.checkbox-field input[type="checkbox"]:checked + label:before{	
+	border-color:#002a42;
+	background:url(images/checked.png) no-repeat left center;
+}
+.radio-box input{
+  position: absolute;
+  visibility: hidden;
+}
 .form-tag form{
 	padding:50px 30px;
 }
@@ -420,7 +503,7 @@ input.type-text {
     width:97%;
     padding: 0;
     border: none;
-    font-size: 22px;
+    font:22px Museothin,sans-serif;
     color: #00a9ab;
 }
 input.type-text:focus{outline:none;}
@@ -1403,6 +1486,29 @@ a.close_icon {
     transform: scale(0.7) translate3d(0, 5px, 0);
 	top:0;
 }
+
+.fl-input-container.input_warning{border-color:red;background-image: url(images/close_icon.png);}
+
+label.required-field.input_warning:before{
+	background: #ffffff url(images/close_icon.png) no-repeat left center;
+	border:none;
+	width:18px;
+	height:18px;
+	border-radius:0;
+}
+
+.input_warning label{color:red !important;}
+.input_warning label input{color:red !important;}
+.input_warning.fl-input-container input{color:red;}
+
+form label.input_warning {border-color: red;}
+form label.input_warning input{color: red;}
+
+.input_warning ::-webkit-input-placeholder { color: red;}
+.input_warning :-moz-placeholder {color: red;}
+.input_warning ::-moz-placeholder {color: red; }
+.input_warning :-ms-input-placeholder {color: red;}
+
 /******************************/
 	/* END APPLI-CONTAINER
 /******************************/
