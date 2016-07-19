@@ -481,6 +481,43 @@ label.radio-input {
     width: 48%;  
 	position: relative;
 }
+
+.form-tag .form-col:first-child{padding-right: 2%;}
+.form-tag .form-col:last-child{padding-left: 2%;}
+.form-tag .form-col label {
+    display: block;
+    background: #ffffff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 10px 25px;
+    color: #999999;    
+	font:15px Museothin, arial,sans-serif;
+	position: relative;
+}
+.form-tag input.type-text {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    font-size: 23px;
+    color: #00a9ab;
+}
+.form-tag input.type-text:focus{outline:none;}
+.cc-notification .select-tag {
+    margin-bottom: 0;
+}
+.application-form .cc-notification .select-tag {
+    margin-bottom: 0;
+}
+.label-row {
+    width: 100%;
+    overflow: hidden;
+}
+.form-tag .form-col .label-row label {
+    width: 75%;	
+	float:left;
+}
+
 .form-col:first-child{padding-right: 2%;}
 .form-col:last-child{padding-left: 2%;}
 .form-row label {
