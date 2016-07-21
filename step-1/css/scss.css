@@ -79,7 +79,7 @@ form, input {
   color: #ffffff; }
 
 .primary-drock-btn {
-  background: #00a9ab;
+  background: #006a77;
   border-radius: 30px;
   color: #ffffff;
   padding: 12px 40px 10px;
@@ -90,7 +90,7 @@ form, input {
   cursor: pointer; }
 
 .primary-drock-btn:hover, .primary-drock-btn:focus {
-  background: #00a9ab;
+  background: #006a77;
   color: #ffffff; }
 
 .secondary-btn {

@@ -32,19 +32,19 @@ $primary-hovercolor:#ffffff;
 $primary-border:none;
 
 $primary-drockbg:#006a77;
-$primary-drockpadding:10px 30px 8px;
+$primary-drockpadding:12px 30px 10px;
 $primary-drockhoverBg:#00a9ab;
 
 $secondary-bg:#ffffff;
 $secondary-radius:20px;
 $secondary-color:#00a9ab;
-$secondary-padding:10px 20px;
+$secondary-padding:12px 30px 10px;
 $secondary-textcase:capitalize;
 $secondary-textAlin:center;
 $secondary-textsize:24px;
 $secondary-hoverBg:#00a9ab;
 $secondary-hovercolor:#ffffff;
-$secondary-border:1px solid #00a9ab;
+$secondary-border:2px solid #00a9ab;
 
 $primary-bgcolor:#cccccc;
 $primary-bgcolorhover:#00a9ab;
@@ -53,6 +53,7 @@ $primary-bgtext:#ffffff;
 $table-bg:#e8e8e8;
 $footer-bg:#002a42;
 $copyright-bg:#002438;
+
 /******* END RESET*******/
 
 /******* START HEADER NAV **********/
@@ -105,8 +106,7 @@ form, input{margin:0;}
 .primary-btn:hover, .primary-btn:focus{
 	background:$primary-hoverBg;
 	color:$primary-hovercolor;
-}	
-
+}
 .primary-drock-btn{
 	background:$primary-drockbg;
 	border-radius:$primary-radius;
@@ -116,12 +116,27 @@ form, input{margin:0;}
 	text-align:$primary-textAlin;
 	font-size:$primary-textsize;
 	border:$primary-border;	
+	cursor: pointer;
 }
 .primary-drock-btn:hover, .primary-drock-btn:focus{
 	background:$primary-drockbg;
 	color:$primary-color;
 }
-
+.secondary-btn{
+	background:$secondary-bg;
+	border-radius:$secondary-radius;
+	color:$secondary-color;
+	padding:$secondary-padding;
+	text-transform:$secondary-textcase;
+	text-align:$secondary-textAlin;
+	font-size:$secondary-textsize;
+	border:$secondary-border;	
+	cursor: pointer;	
+}
+.secondary-btn:hover, .secondary-btn:focus{
+	background:$secondary-bg;
+	color:$secondary-color;
+}
 .big-title{font-size:$big-title;}
 .md-title{font-size:$md-title-size;}
 

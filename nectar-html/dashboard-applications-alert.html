@@ -8,7 +8,8 @@
     <title>Nectar | Dashboard</title>
 	<link rel="icon" href="images/favicon32.png" type="images/png" sizes="32x32">	
     <!-- CSS -->
-    <link href="style.css" rel="stylesheet">
+	<link href="css/bundle.css" rel="stylesheet">
+    <link href="style-main.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -166,7 +167,23 @@
 									
 									<div class="form-row">
 										<div class="form-col">
+										
+											<div class="inputField">
+												<div class="fl-input-container">
+													<input autocomplete="false" class="fl-input" id="text-box" type="text">
+													<label class="fl-input-label" for="text-box">First name</label>
+												</div>
+											</div>
 											
+											<div class="form-row inputField">
+												<div class="fl-input-container input_warning">
+													<input autocomplete="false" class="fl-input" id="text-box" type="text">
+													<label class="fl-input-label" for="text-box">Error Field</label>
+													<span class="fl-input-bar"></span>
+													<span class="fl-error-msg">Full name can contain only the alphabets and space</span>
+												</div>
+											</div>
+									
 											<label>
 												First name
 												<input type="text" class="type-text"/>
@@ -181,10 +198,12 @@
 												<input type="text" class="type-text"/>
 											</label>
 											<div class="label-row">
-												<label>
-													Email address
-													<input type="email" class="type-text"/>													
-												</label>
+												<div class="inputField">
+													<div class="fl-input-container">
+														<input autocomplete="false" class="fl-input" id="text-box" type="text">
+														<label class="fl-input-label" for="text-box">Email address</label>
+													</div>
+												</div>											
 												<span class="verified"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 64 64"><g id="tick.svg">
 													<path class="cls-1" d="M1190.76,1178.95l-9.28-11.67a1.994,1.994,0,0,1,.31-2.79,1.966,1.966,0,0,1,2.78.31l6.52,8.2,20.17-20.29a1.956,1.956,0,0,1,2.79,0,2,2,0,0,1,0,2.81Z" transform="translate(-1166 -1134)"/>
 												  </g></svg> Verified</span>
@@ -192,12 +211,15 @@
 											<label>
 												Mobile number
 												<input type="text" class="type-text"/>
-											</label>											
-											<label>
-												Date of birth
-												<input type="text" class="type-text"/>
-												<span class="calendar-icon"></span>
-											</label>											
+											</label>
+											
+											<div class="inputField">
+												<div class="fl-input-container">
+													<input autocomplete="false" class="fl-input" id="text-box" type="text">
+													<label class="fl-input-label" for="text-box">Date of birth</label>
+													<span class="calendar-icon"></span>
+												</div>
+											</div>																						
 										</div>										
 										<div class="form-col">
 											<label>

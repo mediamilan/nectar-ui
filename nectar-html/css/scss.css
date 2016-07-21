@@ -68,15 +68,31 @@ form, input {
   background: #006a77;
   border-radius: 30px;
   color: #ffffff;
-  padding: 10px 30px 8px;
+  padding: 12px 30px 10px;
   text-transform: capitalize;
   text-align: center;
   font-size: 24px;
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 .primary-drock-btn:hover, .primary-drock-btn:focus {
   background: #006a77;
   color: #ffffff; }
+
+.secondary-btn {
+  background: #ffffff;
+  border-radius: 20px;
+  color: #00a9ab;
+  padding: 12px 30px 10px;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid #00a9ab;
+  cursor: pointer; }
+
+.secondary-btn:hover, .secondary-btn:focus {
+  background: #ffffff;
+  color: #00a9ab; }
 
 .big-title {
   font-size: 60px; }
